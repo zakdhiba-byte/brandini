@@ -1,6 +1,6 @@
 # brandini.pro
 
-Site vitrine statique (HTML/CSS/JS + un PHP pour le formulaire). Pas de build, pas de Node.
+Site vitrine statique (HTML/CSS/JS), hébergé gratuitement sur GitHub Pages. Pas de build, pas de Node.
 
 ## Structure
 
@@ -10,7 +10,7 @@ Site vitrine statique (HTML/CSS/JS + un PHP pour le formulaire). Pas de build, p
 | `services.html` | Services + méthode + FAQ |
 | `realisations.html` | Portfolio filtrable |
 | `agence.html` | L'agence, valeurs |
-| `contact.html` + `contact.php` | Formulaire (envoi par mail) |
+| `contact.html` | Formulaire (envoi par e-mail via FormSubmit) |
 | `mentions-legales.html` | À compléter (obligatoire en France) |
 | `assets/js/i18n.js` | **Tous les textes FR/EN** : c'est ici qu'on modifie le contenu |
 | `assets/js/main.js` | Header/footer communs, e-mail et réseaux sociaux (en haut du fichier) |
@@ -19,15 +19,17 @@ Site vitrine statique (HTML/CSS/JS + un PHP pour le formulaire). Pas de build, p
 
 Les numéros WhatsApp de Ghita et Zak sont dans `TEAM`, en haut de `assets/js/main.js`.
 
-## Mise en ligne sur Hostinger
+## Mise en ligne (GitHub Pages + domaine Hostinger)
 
-1. hPanel → **Sites web** → ajouter `brandini.pro` (si ce n'est pas déjà fait).
-2. **Gestionnaire de fichiers** → dossier `public_html` → supprimer le `default.php` / `index.php` d'Hostinger.
-3. Envoyer tout le contenu de ce dossier dans `public_html`, y compris `.htaccess` (fichier caché).
-   Le plus simple : zipper le dossier, l'envoyer, puis faire « Extraire » dans le gestionnaire.
-4. hPanel → **Sécurité → SSL** : activer le certificat gratuit.
-5. hPanel → **Emails** : créer la boîte `contact@brandini.pro` (le formulaire envoie depuis et vers cette adresse).
-6. Tester le formulaire sur https://brandini.pro/contact.
+1. GitHub → dépôt `zakdhiba-byte/brandini` → **Settings → Pages** : Source « Deploy from a branch », branche `main`, dossier `/ (root)`. Custom domain : `brandini.pro`, puis cocher **Enforce HTTPS** quand c'est disponible.
+2. hPanel Hostinger → **Domaines → brandini.pro → DNS / Serveurs de noms** :
+   - supprimer les enregistrements `A` sur `@` et le `CNAME` sur `www` existants (parking Hostinger)
+   - ajouter 4 enregistrements `A` sur `@` : `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - ajouter un `CNAME` : `www` → `zakdhiba-byte.github.io`
+3. E-mail `contact@brandini.pro` → redirection gratuite via ImprovMX (enregistrements MX + TXT dans la même zone DNS).
+4. Premier envoi du formulaire : FormSubmit envoie un e-mail d'activation à contact@brandini.pro → cliquer sur « Activate ».
+
+Ensuite : chaque `git push` sur `main` = en ligne en ~1 minute.
 
 ## À remplacer avant le lancement
 

@@ -258,13 +258,38 @@
       status.className = "form-status";
       status.textContent = "";
 
-      var data = new FormData(form);
-      data.append("lang", window.__lang);
+      var fd = new FormData(form);
+      // Champ anti-spam rempli = robot : on fait comme si c'était envoyé
+      if (fd.get("website")) {
+        status.className = "form-status ok";
+        status.textContent = dict["form.ok"];
+        form.reset();
+        btn.disabled = false;
+        btnLabel.textContent = dict["form.send"];
+        return;
+      }
+      var payload = {
+        _subject: "Nouveau projet — " + fd.get("name") + (fd.get("company") ? " (" + fd.get("company") + ")" : ""),
+        _template: "table",
+        _captcha: "false",
+        Nom: fd.get("name"),
+        email: fd.get("email"),
+        Entreprise: fd.get("company") || "-",
+        Budget: fd.get("budget") || "-",
+        Besoins: fd.getAll("needs[]").join(", ") || "-",
+        Langue: window.__lang,
+        Message: fd.get("message")
+      };
 
-      fetch(form.getAttribute("action"), { method: "POST", body: data, headers: { Accept: "application/json" } })
-        .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+      // Envoi via FormSubmit (gratuit, pas de serveur) vers CONTACT_EMAIL
+      fetch("https://formsubmit.co/ajax/" + CONTACT_EMAIL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (r) { return r.json().catch(function () { return {}; }); })
         .then(function (res) {
-          if (res && res.ok) {
+          if (res && String(res.success) === "true") {
             status.className = "form-status ok";
             status.textContent = dict["form.ok"];
             form.reset();
