@@ -1026,3 +1026,70 @@ h2 em, .h2 em {
 .home-stats { padding: 0 0 clamp(56px, 8vw, 96px); }
 .stat strong span[data-count] { font-size: inherit; color: inherit; display: inline; font-variant-numeric: tabular-nums; }
 .hero .display { font-size: clamp(40px, 6.6vw, 104px); }
+
+/* ---------- Secteurs ---------- */
+.sectors { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 32px; }
+.sectors-label { font-size: 14px; color: var(--ink-soft); }
+.sectors ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.sectors li {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+/* ---------- Fondateurs ---------- */
+.founders-section { padding-top: 0; }
+.founders { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.founder {
+  margin: 0;
+  padding: clamp(28px, 4vw, 44px);
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+.founder blockquote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+}
+.founder figcaption { display: flex; align-items: center; gap: 14px; }
+.founder figcaption img { width: 56px; height: 56px; border-radius: 50%; box-shadow: 0 0 0 3px var(--accent); }
+.founder figcaption strong { display: block; font-size: 16px; }
+.founder figcaption span span { display: block; font-size: 14px; color: var(--ink-soft); }
+.founder:first-child { border-color: rgba(108, 60, 255, .35); box-shadow: 0 24px 50px -30px rgba(108, 60, 255, .55); }
+.founder.dark { background: var(--ink); color: #f3f3f6; border-color: var(--ink); }
+.founder.dark figcaption span span { color: #a3a4ad; }
+
+/* ---------- Engagements ---------- */
+.commitments-section { padding-top: 0; }
+.commitments { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.commitment {
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+.c-icon {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: var(--ink);
+  margin-bottom: 22px;
+}
+.c-icon svg { width: 22px; height: 22px; }
+.commitment h3 { font-size: 19px; letter-spacing: -.02em; margin-bottom: 8px; }
+.commitment p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+@media (max-width: 1000px) { .commitments { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 760px) { .founders, .commitments { grid-template-columns: 1fr; } }

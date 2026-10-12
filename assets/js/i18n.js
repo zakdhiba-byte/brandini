@@ -6,6 +6,28 @@
 
 window.I18N = {
   fr: {
+    /* Secteurs, fondateurs, engagements */
+    "sectors.label": "Nos clients 2026 :",
+    "sector.realestate": "Immobilier",
+    "sector.ecommerce": "E-commerce",
+    "sector.fashion": "Mode",
+    "sector.fnb": "Restauration",
+    "sector.setup": "Création d'entreprise",
+    "founders.eyebrow": "Le mot des fondateurs",
+    "founders.title": "Pourquoi <em>Brandini.</em>",
+    "founders.ghita.quote": "« Une belle marque qui ne vend pas, c'est un échec. Chez Brandini, chaque choix créatif sert un objectif business clair, et on le mesure. »",
+    "founders.zak.quote": "« On ne livre pas un logo pour disparaître ensuite. On reste à vos côtés jusqu'à ce que la marque performe, en ligne comme sur le terrain. »",
+    "commit.eyebrow": "Nos engagements",
+    "commit.title": "Ce sur quoi vous pouvez <em>compter.</em>",
+    "commit.1.t": "Réponse sous 48 h",
+    "commit.1.d": "Chaque demande reçoit une réponse rapide, par WhatsApp ou par e-mail.",
+    "commit.2.t": "Devis gratuit et détaillé",
+    "commit.2.d": "Un chiffrage clair, poste par poste, avant tout engagement.",
+    "commit.3.t": "Fichiers sources livrés",
+    "commit.3.d": "Votre identité vous appartient : tous les fichiers vous sont remis.",
+    "commit.4.t": "Un interlocuteur dédié",
+    "commit.4.d": "Un seul contact du brief à la livraison, qui connaît votre projet.",
+
     /* Offres */
     "offers.eyebrow": "Offres",
     "offers.title": "Trois formules pour <em>démarrer.</em>",
@@ -227,6 +249,27 @@ window.I18N = {
   },
 
   en: {
+    "sectors.label": "Our 2026 clients:",
+    "sector.realestate": "Real estate",
+    "sector.ecommerce": "E-commerce",
+    "sector.fashion": "Fashion",
+    "sector.fnb": "Food & beverage",
+    "sector.setup": "Business setup",
+    "founders.eyebrow": "From the founders",
+    "founders.title": "Why <em>Brandini.</em>",
+    "founders.ghita.quote": "“A beautiful brand that doesn't sell is a failure. At Brandini, every creative choice serves a clear business goal, and we measure it.”",
+    "founders.zak.quote": "“We don't hand over a logo and disappear. We stay with you until the brand performs, online and on the ground.”",
+    "commit.eyebrow": "Our commitments",
+    "commit.title": "What you can <em>count on.</em>",
+    "commit.1.t": "Reply within 48 hours",
+    "commit.1.d": "Every request gets a quick answer, on WhatsApp or by email.",
+    "commit.2.t": "Free, detailed quote",
+    "commit.2.d": "A clear, itemised estimate before any commitment.",
+    "commit.3.t": "Source files included",
+    "commit.3.d": "Your identity is yours: all files are handed over to you.",
+    "commit.4.t": "One dedicated contact",
+    "commit.4.d": "A single point of contact from brief to delivery, who knows your project.",
+
     "offers.eyebrow": "Packages",
     "offers.title": "Three ways to <em>get started.</em>",
     "offers.lead": "Clear starting points. Each project is then tailored to your needs, with a detailed quote.",
