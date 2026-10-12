@@ -58,11 +58,11 @@
   /* ---------- Header & footer (communs à toutes les pages) ---------- */
 
   var navItems = [
-    ["index.html", "nav.home", "home"],
-    ["services.html", "nav.services", "services"],
-    ["realisations.html", "nav.work", "work"],
-    ["agence.html", "nav.agency", "agency"],
-    ["contact.html", "nav.contact", "contact"]
+    ["/", "nav.home", "home"],
+    ["/services", "nav.services", "services"],
+    ["/realisations", "nav.work", "work"],
+    ["/agence", "nav.agency", "agency"],
+    ["/contact", "nav.contact", "contact"]
   ];
 
   var header = document.getElementById("site-header");
@@ -70,7 +70,7 @@
     header.className = "site-header";
     header.innerHTML =
       '<div class="container nav">' +
-        '<a href="index.html" class="logo" aria-label="Brandini">' + LOGO_HTML + '</a>' +
+        '<a href="/" class="logo" aria-label="Brandini">' + LOGO_HTML + '</a>' +
         '<ul class="nav-links" id="nav-links">' +
           navItems.map(function (n) {
             return '<li><a href="' + n[0] + '" data-i18n="' + n[1] + '"' +
@@ -82,7 +82,7 @@
             '<button type="button" data-lang="fr">FR</button>' +
             '<button type="button" data-lang="en">EN</button>' +
           "</div>" +
-          '<a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.cta"></a>' +
+          '<a href="/contact" class="btn btn-primary btn-sm" data-i18n="nav.cta"></a>' +
           '<button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>' +
         "</div>" +
       "</div>";
@@ -94,17 +94,17 @@
     footer.innerHTML =
       '<div class="container">' +
         '<div class="footer-top">' +
-          '<div><a href="index.html" class="logo" aria-label="Brandini">' + LOGO_HTML + '</a><p data-i18n="footer.tagline"></p></div>' +
+          '<div><a href="/" class="logo" aria-label="Brandini">' + LOGO_HTML + '</a><p data-i18n="footer.tagline"></p></div>' +
           '<div class="footer-col"><h4 data-i18n="footer.nav"></h4><ul>' +
             navItems.map(function (n) {
               return '<li><a href="' + n[0] + '" data-i18n="' + n[1] + '"></a></li>';
             }).join("") +
           "</ul></div>" +
           '<div class="footer-col"><h4 data-i18n="footer.services"></h4><ul>' +
-            '<li><a href="services.html" data-i18n="svc.strategy"></a></li>' +
-            '<li><a href="services.html" data-i18n="svc.identity"></a></li>' +
-            '<li><a href="services.html" data-i18n="svc.web"></a></li>' +
-            '<li><a href="services.html" data-i18n="svc.content"></a></li>' +
+            '<li><a href="/services" data-i18n="svc.strategy"></a></li>' +
+            '<li><a href="/services" data-i18n="svc.identity"></a></li>' +
+            '<li><a href="/services" data-i18n="svc.web"></a></li>' +
+            '<li><a href="/services" data-i18n="svc.content"></a></li>' +
           "</ul></div>" +
           '<div class="footer-col"><h4 data-i18n="footer.contact"></h4><ul>' +
             '<li><a href="mailto:' + CONTACT_EMAIL + '">' + CONTACT_EMAIL + "</a></li>" +
@@ -115,7 +115,7 @@
         '<div class="footer-big" aria-hidden="true">BRANDINI</div>' +
         '<div class="footer-bottom">' +
           "<span>© " + new Date().getFullYear() + ' Brandini. <span data-i18n="footer.rights"></span></span>' +
-          '<a href="mentions-legales.html" data-i18n="footer.legal"></a>' +
+          '<a href="/mentions-legales" data-i18n="footer.legal"></a>' +
         "</div>" +
       "</div>";
   }
