@@ -14,5 +14,6 @@ Site vitrine statique de l'agence Brandini (HTML/CSS/JS + `contact.php`), biling
 - Textes FR/EN : `assets/js/i18n.js` (clés `data-i18n` dans les pages). Toujours modifier les deux langues.
 - Header, footer, formulaire, bouton WhatsApp, numéros de l'équipe (`TEAM`), e-mail : haut de `assets/js/main.js`.
 - Couleurs / polices : `:root` dans `assets/css/style.css` (jaune `#fed23e`, encre `#1c1d26`).
+- Traînée néon du curseur : `assets/js/neon.js` (couleurs, durée, épaisseur en haut du fichier ; désactivée sur tactile).
 - Logo vectorisé : `assets/img/logo*.svg` (le même tracé est inline dans `main.js` et `agence.html`).
-- Cache : les pages chargent `style.css?v=N`, `i18n.js?v=N`, `main.js?v=N`. À chaque modif de CSS/JS, incrémenter N dans **toutes** les pages `*.html` (`sed -i '' 's/?v=N"/?v=N+1"/g' *.html`).
+- Cache : les pages chargent `style.css?v=N`, `i18n.js?v=N`, `main.js?v=N`. À chaque modif de CSS/JS, incrémenter N dans **toutes** les pages `*.html` (`sed -i '' 's/?v=N"/?v=N+1"/g' *.html`) — inclut aussi `neon.js?v=N`.
