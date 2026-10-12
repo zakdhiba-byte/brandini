@@ -7,8 +7,8 @@
 
   /* WhatsApp — numéros au format international, sans "+" ni espaces */
   var TEAM = [
-    { name: "Ghita", initials: "G", role: "team.ghita.role", zone: "team.ghita.zone", wa: "212680006050", display: "+212 680 006 050" },
-    { name: "Zak", initials: "Z", role: "team.zak.role", zone: "team.zak.zone", wa: "971507250385", display: "+971 50 725 0385" }
+    { name: "Ghita", initials: "G", photo: "assets/img/team-ghita-sm.jpg", role: "team.ghita.role", zone: "team.ghita.zone", wa: "212680006050", display: "+212 680 006 050" },
+    { name: "Zak", initials: "Z", photo: "assets/img/team-zak-sm.jpg", role: "team.zak.role", zone: "team.zak.zone", wa: "971507250385", display: "+971 50 725 0385" }
   ];
 
   var MARK_SVG =
@@ -32,7 +32,7 @@
 
   function waCard(m) {
     return '<a class="wa-card" data-wa="' + m.wa + '" href="https://wa.me/' + m.wa + '" target="_blank" rel="noopener">' +
-      '<span class="wa-avatar">' + m.initials + "</span>" +
+      '<span class="wa-avatar">' + (m.photo ? '<img src="' + m.photo + '" alt="" width="60" height="60">' : m.initials) + "</span>" +
       '<span class="who"><strong>' + m.name + '</strong><span data-i18n="' + m.role + '"></span><small><span data-i18n="' + m.zone + '"></span> · ' + m.display + "</small></span>" +
       '<span class="wa-icon">' + WA_SVG + "</span></a>";
   }
