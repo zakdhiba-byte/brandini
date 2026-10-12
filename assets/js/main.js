@@ -108,9 +108,6 @@
           "</ul></div>" +
           '<div class="footer-col"><h4 data-i18n="footer.contact"></h4><ul>' +
             '<li><a href="mailto:' + CONTACT_EMAIL + '">' + CONTACT_EMAIL + "</a></li>" +
-            TEAM.map(function (m) {
-              return '<li><a data-wa="' + m.wa + '" href="https://wa.me/' + m.wa + '" target="_blank" rel="noopener">WhatsApp ' + m.name + "</a></li>";
-            }).join("") +
             '<li><a href="' + INSTAGRAM + '" target="_blank" rel="noopener">Instagram</a></li>' +
             '<li><a href="' + LINKEDIN + '" target="_blank" rel="noopener">LinkedIn</a></li>' +
           "</ul></div>" +

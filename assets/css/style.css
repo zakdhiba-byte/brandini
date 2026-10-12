@@ -4,18 +4,19 @@
    ========================================================================== */
 
 :root {
-  --bg: #f6f4ee;
+  --bg: #f4f5f7;
   --bg-alt: #fed23e;
-  --ink: #1c1d26;
-  --ink-soft: #565761;
-  --line: #dcd8cc;
+  --ink: #16171d;
+  --ink-soft: #5a5d6b;
+  --line: #dfe1e7;
   --accent: #fed23e;
-  --accent-ink: #1c1d26;
-  --card: #fdfcf8;
+  --accent-ink: #16171d;
+  --violet: #6c3cff;
+  --card: #ffffff;
   --wa: #25d366;
 
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-body: "Inter Tight", system-ui, -apple-system, sans-serif;
+  --font-display: "Sora", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
 
   --radius: 18px;
   --gutter: clamp(16px, 4vw, 48px);
@@ -907,3 +908,45 @@ section { padding: clamp(72px, 11vw, 150px) 0; }
 .wa-menu .wa-card { border-radius: 14px; }
 .wa-menu .wa-card + .wa-card { margin-top: 4px; }
 .wa-card .who .flags { display: inline-flex; }
+
+/* ==========================================================================
+   Design « Tech clair » : titres Sora, palette jaune / encre / violet
+   ========================================================================== */
+
+h1, h2, h3, .display, .h2, .h3 { font-family: "Sora", system-ui, sans-serif; }
+.display { font-weight: 600; letter-spacing: -.055em; font-size: clamp(42px, 7.6vw, 118px); }
+.cta .display { font-size: clamp(40px, 7vw, 110px); }
+.h2 { font-weight: 600; letter-spacing: -.045em; }
+em, .serif { font-family: inherit; font-style: normal; font-weight: inherit; }
+h2 em, .h2 em { color: var(--violet); }
+.eyebrow::before { background: var(--violet); }
+.nav-links a:hover { color: var(--violet); }
+.btn-primary:hover { background: var(--violet); border-color: var(--violet); color: #fff; }
+.service-num, .step .n { color: var(--violet); }
+.step .n { font-weight: 600; }
+.faq summary::after, .service-row .plus { color: var(--violet); }
+.marquee-track { font-weight: 600; letter-spacing: -.03em; }
+.quote blockquote { font-weight: 600; letter-spacing: -.04em; }
+.work-visual .mark { font-weight: 600; letter-spacing: -.05em; }
+.footer-big { font-weight: 700; }
+.v1 { background: #16171d; color: #fed23e; }
+.v2 { background: #fed23e; color: #16171d; }
+.v3 { background: #6c3cff; color: #ffffff; }
+.v4 { background: #e7e8ee; color: #6c3cff; }
+.v5 { background: #16171d; color: #b9a4ff; }
+.v6 { background: #6c3cff; color: #fed23e; }
+
+/* Mots mis en avant : effet néon */
+.hero h1 em,
+.page-hero h1 em,
+h2 em, .h2 em {
+  background: none;
+  padding: 0;
+  color: var(--violet);
+  text-shadow: 0 0 14px rgba(108, 60, 255, .45), 0 0 38px rgba(108, 60, 255, .3);
+}
+.cta em,
+.cta h2 em {
+  color: #fed23e;
+  text-shadow: 0 0 16px rgba(254, 210, 62, .55), 0 0 44px rgba(254, 210, 62, .35);
+}
