@@ -87,8 +87,8 @@ window.I18N = {
 
     /* Accueil */
     "home.eyebrow": "Agence de branding & marketing",
-    "home.title": "On crée des marques qu'on <em>n'oublie</em> pas.",
-    "home.lead": "Stratégie, identité, digital : Brandini accompagne les entreprises ambitieuses de l'idée jusqu'à la marque qui marque.",
+    "home.title": "Des marques qui durent. Des campagnes qui <em>performent.</em>",
+    "home.lead": "Agence de branding et de marketing de performance, entre Paris, Dubaï et Casablanca. De l'identité à la campagne, nous construisons des marques qui se voient et qui vendent.",
     "home.cta1": "Démarrer un projet",
     "home.cta2": "Voir nos réalisations",
 
@@ -300,8 +300,8 @@ window.I18N = {
     "svc.campaigns": "Campaigns",
 
     "home.eyebrow": "Branding & marketing agency",
-    "home.title": "We build brands people <em>remember.</em>",
-    "home.lead": "Strategy, identity, digital: Brandini helps ambitious companies go from an idea to a brand that stands out.",
+    "home.title": "Brands that last. Campaigns that <em>perform.</em>",
+    "home.lead": "Branding and performance marketing agency, between Paris, Dubai and Casablanca. From identity to campaign, we build brands that get seen and that sell.",
     "home.cta1": "Start a project",
     "home.cta2": "See our work",
 

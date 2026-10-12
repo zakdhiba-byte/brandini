@@ -240,6 +240,32 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
+  /* ---------- Chiffres clés : compteur animé ---------- */
+
+  var counters = document.querySelectorAll("[data-count]");
+  var reduceMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function runCounter(el) {
+    var target = parseFloat(el.getAttribute("data-count"));
+    var start = null, dur = 1800;
+    function step(t) {
+      if (!start) start = t;
+      var k = Math.min(1, (t - start) / dur);
+      var eased = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(target * eased).toLocaleString(window.__lang === "en" ? "en-US" : "fr-FR");
+      if (k < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if (counters.length && !reduceMotion && "IntersectionObserver" in window) {
+    counters.forEach(function (el) { el.textContent = "0"; });
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { runCounter(en.target); cio.unobserve(en.target); }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { cio.observe(el); });
+  }
+
   /* ---------- Filtres réalisations ---------- */
 
   var filters = document.querySelectorAll(".filter");

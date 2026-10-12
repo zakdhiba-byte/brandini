@@ -1021,3 +1021,8 @@ h2 em, .h2 em {
   .offers { grid-template-columns: 1fr; }
 }
 .stat strong { white-space: nowrap; font-size: clamp(40px, 5vw, 72px); font-weight: 600; letter-spacing: -.045em; }
+
+/* ---------- Chiffres sur l'accueil ---------- */
+.home-stats { padding: 0 0 clamp(56px, 8vw, 96px); }
+.stat strong span[data-count] { font-size: inherit; color: inherit; display: inline; font-variant-numeric: tabular-nums; }
+.hero .display { font-size: clamp(40px, 6.6vw, 104px); }
