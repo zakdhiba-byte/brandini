@@ -7,9 +7,23 @@
 
   /* WhatsApp — numéros au format international, sans "+" ni espaces */
   var TEAM = [
-    { name: "Ghita", initials: "G", photo: "assets/img/team-ghita-sm.jpg", role: "team.ghita.role", zone: "team.ghita.zone", wa: "212680006050", display: "+212 680 006 050" },
-    { name: "Zak", initials: "Z", photo: "assets/img/team-zak-sm.jpg", role: "team.zak.role", zone: "team.zak.zone", wa: "971507250385", display: "+971 50 725 0385" }
+    { name: "Ghita", initials: "G", photo: "assets/img/team-ghita-sm.jpg", role: "team.ghita.role", zone: "team.ghita.zone", flags: ["ma", "sa"], theme: "violet", wa: "212680006050" },
+    { name: "Zak", initials: "Z", photo: "assets/img/team-zak-sm.jpg", role: "team.zak.role", zone: "team.zak.zone", flags: ["fr", "ae"], theme: "noir", wa: "971507250385" }
   ];
+
+  /* Drapeaux (SVG inline, s'affichent partout, y compris sous Windows) */
+  var FLAGS = {
+    ma: '<path fill="#c1272d" d="M0 0h30v20H0z"/><path fill="none" stroke="#006233" stroke-width="1.5" stroke-linejoin="round" d="M15 5.2l3.06 9.41-8.01-5.82h9.9l-8.01 5.82z"/>',
+    sa: '<path fill="#006c35" d="M0 0h30v20H0z"/><path fill="none" stroke="#fff" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" d="M8 9l1.5-2 1.5 2 1.5-2 1.5 2 1.5-2 1.5 2 1.5-2 1.5 2 1.5-2M8.5 13.5h12m0 0l1.5-1m-12 1v-1"/>',
+    fr: '<path fill="#fff" d="M0 0h30v20H0z"/><path fill="#002654" d="M0 0h10v20H0z"/><path fill="#ce1126" d="M20 0h10v20H20z"/>',
+    ae: '<path fill="#009739" d="M0 0h30v6.67H0z"/><path fill="#fff" d="M0 6.67h30v6.66H0z"/><path fill="#000" d="M0 13.33h30V20H0z"/><path fill="#ef3340" d="M0 0h8v20H0z"/>'
+  };
+  var FLAG_NAMES = { ma: "Maroc", sa: "Arabie saoudite", fr: "France", ae: "Émirats arabes unis" };
+  function flagsHtml(codes) {
+    return '<span class="flags">' + codes.map(function (c) {
+      return '<svg class="flag" viewBox="0 0 30 20" role="img" aria-label="' + FLAG_NAMES[c] + '"><title>' + FLAG_NAMES[c] + "</title>" + FLAGS[c] + "</svg>";
+    }).join("") + "</span>";
+  }
 
   var MARK_SVG =
     '<svg class="logo-mark" viewBox="46 14 54 74" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">' +
@@ -31,9 +45,9 @@
   }
 
   function waCard(m) {
-    return '<a class="wa-card" data-wa="' + m.wa + '" href="https://wa.me/' + m.wa + '" target="_blank" rel="noopener">' +
+    return '<a class="wa-card wa-' + m.theme + '" data-wa="' + m.wa + '" href="https://wa.me/' + m.wa + '" target="_blank" rel="noopener">' +
       '<span class="wa-avatar">' + (m.photo ? '<img src="' + m.photo + '" alt="" width="60" height="60">' : m.initials) + "</span>" +
-      '<span class="who"><strong>' + m.name + '</strong><span data-i18n="' + m.role + '"></span><small><span data-i18n="' + m.zone + '"></span> · ' + m.display + "</small></span>" +
+      '<span class="who"><strong>' + m.name + " " + flagsHtml(m.flags) + '</strong><span data-i18n="' + m.role + '"></span></span>' +
       '<span class="wa-icon">' + WA_SVG + "</span></a>";
   }
   var INSTAGRAM = "https://instagram.com/brandini.pro";
@@ -131,6 +145,9 @@
 
   document.querySelectorAll("[data-wa-cards]").forEach(function (el) {
     el.innerHTML = TEAM.map(waCard).join("");
+  });
+  document.querySelectorAll("[data-flags]").forEach(function (el) {
+    el.innerHTML = flagsHtml(el.getAttribute("data-flags").split(","));
   });
   document.querySelectorAll("[data-wa-member]").forEach(function (el) {
     var m = TEAM.filter(function (t) { return t.name === el.getAttribute("data-wa-member"); })[0];

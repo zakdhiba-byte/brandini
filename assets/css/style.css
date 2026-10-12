@@ -849,3 +849,61 @@ section { padding: clamp(72px, 11vw, 150px) 0; }
 .member .wa-link svg { width: 16px; height: 16px; }
 .member p { margin: 6px 0 0; font-size: 14px; color: var(--ink-soft); }
 @media (max-width: 860px) { .team { grid-template-columns: 1fr; } }
+
+/* ---------- Drapeaux ---------- */
+
+.flags { display: inline-flex; gap: 5px; vertical-align: middle; margin-left: 6px; position: relative; top: -1px; }
+.flag {
+  width: 21px;
+  height: 14px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(28,29,38,.12);
+  display: block;
+}
+.member [data-flags] .flags { margin: 0; }
+.member [data-flags] .flag { width: 27px; height: 18px; }
+
+/* ---------- Cartes WhatsApp : survol par personne ---------- */
+
+.wa-card { position: relative; overflow: hidden; isolation: isolate; }
+.wa-card .who strong { display: flex; align-items: center; }
+.wa-card .who span:not(.flags) { transition: color .3s; }
+.wa-card .who strong { transition: color .3s; }
+.wa-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .35s var(--ease);
+}
+.wa-card:hover::before,
+.wa-card:focus-visible::before { opacity: 1; }
+.wa-card:hover .who strong,
+.wa-card:focus-visible .who strong { color: #fff; }
+.wa-card:hover .who span:not(.flags),
+.wa-card:focus-visible .who span:not(.flags) { color: rgba(255,255,255,.72); }
+.wa-card:hover .wa-avatar,
+.wa-card:focus-visible .wa-avatar { box-shadow: 0 0 0 2px rgba(255,255,255,.9); }
+.wa-card:hover .flag { box-shadow: 0 0 0 1px rgba(255,255,255,.35); }
+
+.wa-violet::before {
+  background:
+    radial-gradient(120% 140% at 0% 0%, #9b7bff 0%, transparent 55%),
+    linear-gradient(135deg, #6c3cff 0%, #3b1a9e 100%);
+}
+.wa-violet:hover,
+.wa-menu .wa-violet:hover { border-color: #6c3cff; box-shadow: 0 14px 34px -14px rgba(108,60,255,.75); }
+
+.wa-noir::before {
+  background:
+    radial-gradient(120% 140% at 0% 0%, #3a3c4a 0%, transparent 55%),
+    linear-gradient(135deg, #22232c 0%, #0b0b0f 100%);
+}
+.wa-noir:hover,
+.wa-menu .wa-noir:hover { border-color: #0b0b0f; box-shadow: 0 14px 34px -14px rgba(0,0,0,.7); }
+
+.wa-menu .wa-card:hover { background: none; }
+.wa-menu .wa-card { border-radius: 14px; }
+.wa-menu .wa-card + .wa-card { margin-top: 4px; }
+.wa-card .who .flags { display: inline-flex; }
