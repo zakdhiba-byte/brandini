@@ -9,6 +9,7 @@ Site vitrine statique de l'agence Brandini (HTML/CSS/JS + `contact.php`), biling
 - Compte GitHub : `zakdhiba-byte` uniquement (remote avec le nom d'utilisateur dans l'URL). Ne jamais utiliser le compte obvioustechnologiesmarketing.
 - Pas de PHP (GitHub Pages = statique). Le formulaire passe par FormSubmit (`https://formsubmit.co/ajax/contact@brandini.pro`), redirigé vers le Gmail de l'utilisateur via ImprovMX.
 - Le dépôt est public : ne jamais y committer de secrets.
+- Le site ne doit pas laisser deviner qu'il est fait avec une IA : pas de trailer Co-Authored-By dans les commits, pas de mention d'outils dans les pages. `CLAUDE.md` et `README.md` sont exclus du site via `_config.yml`.
 
 ## Où sont les choses
 - Textes FR/EN : `assets/js/i18n.js` (clés `data-i18n` dans les pages). Toujours modifier les deux langues.

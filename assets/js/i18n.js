@@ -6,6 +6,45 @@
 
 window.I18N = {
   fr: {
+    /* Offres */
+    "offers.eyebrow": "Offres",
+    "offers.title": "Trois formules pour <em>démarrer.</em>",
+    "offers.lead": "Des points de départ clairs. Chaque projet est ensuite ajusté à vos besoins, avec un devis détaillé.",
+    "offers.from": "À partir de",
+    "offers.badge": "Recommandé",
+    "offers.cta": "Demander un devis",
+    "offers.note": "Prix hors taxes, indicatifs. Le devis final dépend du périmètre et des délais.",
+    "offer.ess.name": "Essentiel",
+    "offer.ess.desc": "Pour lancer une activité avec une image propre et professionnelle.",
+    "offer.ess.price": "200 €",
+    "offer.ess.f1": "Création de logo",
+    "offer.ess.f2": "Palette de couleurs & typographies",
+    "offer.ess.f3": "Fichiers prêts à l'emploi (PNG, SVG, PDF)",
+    "offer.ess.f4": "2 allers-retours",
+    "offer.sig.name": "Signature",
+    "offer.sig.desc": "Pour une marque cohérente, pensée sur le fond comme sur la forme.",
+    "offer.sig.price": "600 €",
+    "offer.sig.f1": "Tout l'Essentiel",
+    "offer.sig.f2": "Plateforme de marque : positionnement, valeurs, ton",
+    "offer.sig.f3": "Charte graphique complète",
+    "offer.sig.f4": "Déclinaisons : cartes de visite, réseaux sociaux",
+    "offer.sig.f5": "3 allers-retours",
+    "offer.360.name": "360",
+    "offer.360.desc": "Pour lancer ou relancer une marque sur tous les canaux.",
+    "offer.360.price": "1 500 €",
+    "offer.360.f1": "Toute l'offre Signature",
+    "offer.360.f2": "Site vitrine sur-mesure",
+    "offer.360.f3": "Kit de lancement réseaux sociaux",
+    "offer.360.f4": "Mise en place des campagnes Meta & Google",
+    "offer.360.f5": "Suivi pendant 1 mois",
+
+    /* Chiffres clés */
+    "stats.years.unit": "ans",
+    "stats.years": "d'expérience moyenne dans l'équipe",
+    "stats.clients": "clients accompagnés en 2026",
+    "stats.budget": "de budgets publicitaires gérés sur Meta & Google",
+    "stats.views": "de vues cumulées, toutes plateformes",
+
     /* WhatsApp & équipe */
     "wa.choose": "Écrivez-nous sur WhatsApp :",
     "wa.title": "Écrivez-nous directement",
@@ -36,7 +75,7 @@ window.I18N = {
     "common.discover": "Découvrir",
     "common.allWork": "Voir toutes les réalisations",
     "common.allServices": "Tous nos services",
-    "common.concept": "Concept",
+    "common.concept": "Projet studio",
 
     /* Services (titres courts, réutilisés) */
     "svc.strategy": "Stratégie de marque",
@@ -63,7 +102,7 @@ window.I18N = {
 
     "home.work.eyebrow": "Réalisations",
     "home.work.title": "Des marques qui ont <em>du caractère.</em>",
-    "home.work.lead": "Une sélection de projets d'identité, de digital et de contenu.",
+    "home.work.lead": "Des marques imaginées par notre studio pour montrer notre façon de penser : identité, digital et contenu.",
 
     "home.process.eyebrow": "Méthode",
     "home.process.title": "Simple, clair, <em>efficace.</em>",
@@ -125,7 +164,7 @@ window.I18N = {
     /* Page Réalisations */
     "work.eyebrow": "Réalisations",
     "work.title": "Le travail <em>parle.</em>",
-    "work.lead": "Identités, sites, contenus : un aperçu de ce qu'on fait pour nos clients.",
+    "work.lead": "Nos projets studio : des marques fictives, créées de A à Z par notre équipe pour explorer des univers et montrer notre approche.",
     "filter.all": "Tout",
     "filter.identity": "Identité",
     "filter.web": "Web",
@@ -188,6 +227,43 @@ window.I18N = {
   },
 
   en: {
+    "offers.eyebrow": "Packages",
+    "offers.title": "Three ways to <em>get started.</em>",
+    "offers.lead": "Clear starting points. Each project is then tailored to your needs, with a detailed quote.",
+    "offers.from": "From",
+    "offers.badge": "Recommended",
+    "offers.cta": "Request a quote",
+    "offers.note": "Indicative prices, excluding VAT. The final quote depends on scope and timeline.",
+    "offer.ess.name": "Essential",
+    "offer.ess.desc": "To launch a business with a clean, professional image.",
+    "offer.ess.price": "€200",
+    "offer.ess.f1": "Logo design",
+    "offer.ess.f2": "Colour palette & typography",
+    "offer.ess.f3": "Ready-to-use files (PNG, SVG, PDF)",
+    "offer.ess.f4": "2 feedback rounds",
+    "offer.sig.name": "Signature",
+    "offer.sig.desc": "For a coherent brand, built on substance as much as style.",
+    "offer.sig.price": "€600",
+    "offer.sig.f1": "Everything in Essential",
+    "offer.sig.f2": "Brand platform: positioning, values, tone",
+    "offer.sig.f3": "Complete brand guidelines",
+    "offer.sig.f4": "Applications: business cards, social media",
+    "offer.sig.f5": "3 feedback rounds",
+    "offer.360.name": "360",
+    "offer.360.desc": "To launch or relaunch a brand across every channel.",
+    "offer.360.price": "€1,500",
+    "offer.360.f1": "Everything in Signature",
+    "offer.360.f2": "Custom showcase website",
+    "offer.360.f3": "Social media launch kit",
+    "offer.360.f4": "Meta & Google campaign setup",
+    "offer.360.f5": "1 month of follow-up",
+
+    "stats.years.unit": "yrs",
+    "stats.years": "average experience across the team",
+    "stats.clients": "clients supported in 2026",
+    "stats.budget": "in ad budgets managed on Meta & Google",
+    "stats.views": "cumulative views across platforms",
+
     "wa.choose": "Message us on WhatsApp:",
     "wa.title": "Message us directly",
     "team.zak.role": "Managing Partner & Head of Marketing",
@@ -214,7 +290,7 @@ window.I18N = {
     "common.discover": "Discover",
     "common.allWork": "See all work",
     "common.allServices": "All services",
-    "common.concept": "Concept",
+    "common.concept": "Studio project",
 
     "svc.strategy": "Brand strategy",
     "svc.identity": "Visual identity",
@@ -239,7 +315,7 @@ window.I18N = {
 
     "home.work.eyebrow": "Work",
     "home.work.title": "Brands with <em>character.</em>",
-    "home.work.lead": "A selection of identity, digital and content projects.",
+    "home.work.lead": "Brands imagined by our studio to show how we think: identity, digital and content.",
 
     "home.process.eyebrow": "Process",
     "home.process.title": "Simple, clear, <em>effective.</em>",
@@ -299,7 +375,7 @@ window.I18N = {
 
     "work.eyebrow": "Work",
     "work.title": "The work <em>speaks.</em>",
-    "work.lead": "Identities, websites, content: a look at what we do for our clients.",
+    "work.lead": "Our studio projects: fictional brands, built from scratch by our team to explore new worlds and show our approach.",
     "filter.all": "All",
     "filter.identity": "Identity",
     "filter.web": "Web",

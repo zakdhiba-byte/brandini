@@ -950,3 +950,74 @@ h2 em, .h2 em {
   color: #fed23e;
   text-shadow: 0 0 16px rgba(254, 210, 62, .55), 0 0 44px rgba(254, 210, 62, .35);
 }
+
+/* ---------- Offres ---------- */
+
+.offers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+.offer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+}
+.offer h3 { font-size: 26px; letter-spacing: -.03em; }
+.offer-desc { color: var(--ink-soft); margin: 10px 0 24px; font-size: 15px; }
+.offer-price { margin: 0 0 24px; font-size: 14px; color: var(--ink-soft); }
+.offer-price strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -.04em;
+  line-height: 1.1;
+  color: var(--ink);
+}
+.offer ul { list-style: none; margin: 0 0 32px; padding: 0; display: grid; gap: 10px; font-size: 15px; }
+.offer li { position: relative; padding-left: 26px; }
+.offer li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: .45em;
+  width: 14px; height: 8px;
+  border-left: 2px solid var(--violet);
+  border-bottom: 2px solid var(--violet);
+  transform: rotate(-45deg);
+}
+.offer .btn { margin-top: auto; justify-content: center; }
+.offer.featured {
+  background: var(--ink);
+  color: #f3f3f6;
+  border-color: var(--ink);
+  box-shadow: 0 30px 60px -30px rgba(108, 60, 255, .6);
+}
+.offer.featured .offer-desc,
+.offer.featured .offer-price { color: #a3a4ad; }
+.offer.featured .offer-price strong { color: #fed23e; text-shadow: 0 0 22px rgba(254, 210, 62, .4); }
+.offer.featured li::before { border-color: #fed23e; }
+.offer.featured .btn-primary { background: #fed23e; border-color: #fed23e; color: var(--ink); }
+.offer.featured .btn-primary:hover { background: var(--violet); border-color: var(--violet); color: #fff; }
+.offer-badge {
+  position: absolute;
+  top: -13px; left: 28px;
+  background: var(--violet);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+.offers-note { margin: 24px 0 0; font-size: 14px; color: var(--ink-soft); }
+.stat strong small { font-size: .4em; letter-spacing: 0; font-weight: 500; }
+@media (max-width: 900px) {
+  .offers { grid-template-columns: 1fr; }
+}
+.stat strong { white-space: nowrap; font-size: clamp(40px, 5vw, 72px); font-weight: 600; letter-spacing: -.045em; }
