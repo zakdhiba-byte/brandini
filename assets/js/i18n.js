@@ -6,6 +6,15 @@
 
 window.I18N = {
   fr: {
+    /* Media Hub */
+    "hub.eyebrow": "Media Hub",
+    "hub.title": "Comprendre les marchés pour mieux <em>communiquer.</em>",
+    "hub.lead": "Analyses, chiffres et tendances du marketing au Moyen-Orient, au Maroc et en France. Des données sourcées, pour décider en connaissance de cause.",
+    "hub.home.title": "Nos analyses, <em>chiffres à l'appui.</em>",
+    "hub.home.lead": "Marketing digital au Moyen-Orient, communication au Maroc, performance publicitaire : nos décryptages sourcés.",
+    "hub.all": "Tous les articles",
+    "hub.related": "À lire <em>aussi.</em>",
+
     /* Secteurs, fondateurs, engagements */
     "sectors.label": "Nos clients 2026 :",
     "sector.realestate": "Immobilier",
@@ -80,7 +89,7 @@ window.I18N = {
     /* Navigation */
     "nav.home": "Accueil",
     "nav.services": "Services",
-    "nav.work": "Réalisations",
+    "nav.work": "Media Hub",
     "nav.agency": "L'agence",
     "nav.contact": "Contact",
     "nav.cta": "Démarrer un projet",
@@ -112,7 +121,7 @@ window.I18N = {
     "home.title": "Des marques qui durent. Des campagnes qui <em>performent.</em>",
     "home.lead": "Agence de branding et de marketing de performance, entre Paris, Dubaï et Casablanca. De l'identité à la campagne, nous construisons des marques qui se voient et qui vendent.",
     "home.cta1": "Démarrer un projet",
-    "home.cta2": "Voir nos réalisations",
+    "home.cta2": "Lire le Media Hub",
 
     "home.svc.eyebrow": "Ce qu'on fait",
     "home.svc.title": "Une marque forte, <em>de A à Z.</em>",
@@ -249,6 +258,14 @@ window.I18N = {
   },
 
   en: {
+    "hub.eyebrow": "Media Hub",
+    "hub.title": "Understand the markets, <em>communicate better.</em>",
+    "hub.lead": "Insights, figures and marketing trends across the Middle East, Morocco and France. Sourced data to make informed decisions.",
+    "hub.home.title": "Our insights, <em>backed by data.</em>",
+    "hub.home.lead": "Digital marketing in the Middle East, communication in Morocco, ad performance: our sourced deep dives.",
+    "hub.all": "All articles",
+    "hub.related": "Keep <em>reading.</em>",
+
     "sectors.label": "Our 2026 clients:",
     "sector.realestate": "Real estate",
     "sector.ecommerce": "E-commerce",
@@ -318,7 +335,7 @@ window.I18N = {
 
     "nav.home": "Home",
     "nav.services": "Services",
-    "nav.work": "Work",
+    "nav.work": "Media Hub",
     "nav.agency": "Agency",
     "nav.contact": "Contact",
     "nav.cta": "Start a project",
@@ -346,7 +363,7 @@ window.I18N = {
     "home.title": "Brands that last. Campaigns that <em>perform.</em>",
     "home.lead": "Branding and performance marketing agency, between Paris, Dubai and Casablanca. From identity to campaign, we build brands that get seen and that sell.",
     "home.cta1": "Start a project",
-    "home.cta2": "See our work",
+    "home.cta2": "Read the Media Hub",
 
     "home.svc.eyebrow": "What we do",
     "home.svc.title": "A strong brand, <em>end to end.</em>",

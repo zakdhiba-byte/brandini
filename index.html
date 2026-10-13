@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=14">
+  <link rel="stylesheet" href="assets/css/style.css?v=17">
 </head>
 <body data-page="home"
       data-title-fr="Brandini — Agence de branding & marketing"
@@ -34,7 +34,7 @@
         <p class="lead reveal d2" data-i18n="home.lead"></p>
         <div class="hero-actions reveal d3">
           <a href="/contact" class="btn btn-primary"><span data-i18n="home.cta1">Démarrer un projet</span> <span class="arrow">→</span></a>
-          <a href="/realisations" class="btn btn-ghost" data-i18n="home.cta2">Voir nos réalisations</a>
+          <a href="/media-hub/" class="btn btn-ghost" data-i18n="home.cta2">Voir nos réalisations</a>
         </div>
       </div>
     </div>
@@ -86,30 +86,51 @@
     </div>
   </section>
 
-  <section style="padding-top:0">
+  <!-- HUB:START -->
+  <section class="home-hub">
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="eyebrow reveal" data-i18n="home.work.eyebrow"></span>
-          <h2 class="h2 reveal d1" data-i18n="home.work.title"></h2>
+          <span class="eyebrow reveal" data-i18n="hub.eyebrow"></span>
+          <h2 class="h2 reveal d1" data-i18n="hub.home.title"></h2>
         </div>
         <div class="reveal d2">
-          <p class="lead" data-i18n="home.work.lead"></p>
-          <p style="margin-top:24px"><a href="/realisations" class="btn btn-ghost btn-sm"><span data-i18n="common.allWork"></span> <span class="arrow">→</span></a></p>
+          <p class="lead" data-i18n="hub.home.lead"></p>
+          <p style="margin-top:24px"><a href="/media-hub/" class="btn btn-ghost btn-sm"><span data-i18n="hub.all"></span> <span class="arrow">→</span></a></p>
         </div>
       </div>
-      <div class="work-grid">
-        <a href="/realisations" class="work-card reveal">
-          <div class="work-visual v1"><span class="badge" data-i18n="common.concept"></span><span class="mark">Verdane</span></div>
-          <div class="work-meta"><h3>Verdane</h3><span data-i18n="p1.cat"></span></div>
+      <div class="hub-grid three">
+        <a class="hub-card reveal" href="/media-hub/digital-marketing-moyen-orient">
+          <div class="hub-cover tone-0" aria-hidden="true"><span class="hub-cover-cat"><span class="lang-fr">Marketing digital</span><span class="lang-en">Digital marketing</span></span><span class="hub-cover-title"><span class="lang-fr">Marketing digital au Moyen-Orient : les chiffres clés pour 2026</span><span class="lang-en">Digital marketing in the Middle East: the key numbers for 2026</span></span><span class="hub-cover-foot"><svg class="hub-mark" viewBox="46 14 54 74" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M51.5 32V19.5H83A11.5 11.5 0 0 1 94.5 31V37.5"/><path d="M81 34.5H61A9.5 9.5 0 0 0 51.5 44V82H81A13.5 13.5 0 0 0 94.5 68.5V60.5A13.5 13.5 0 0 0 81 47H63V70.5"/></svg><span><span class="lang-fr">Moyen-Orient</span><span class="lang-en">Middle East</span></span></span></div>
+          <div class="hub-card-body">
+            <span class="hub-card-meta"><span class="lang-fr">Moyen-Orient</span><span class="lang-en">Middle East</span> · 7 min</span>
+            <h3><span class="lang-fr">Marketing digital au Moyen-Orient : les chiffres clés pour 2026</span><span class="lang-en">Digital marketing in the Middle East: the key numbers for 2026</span></h3>
+            <p><span class="lang-fr">Internautes, mobile, réseaux sociaux, publicité, e-commerce : les chiffres vérifiés à connaître pour bâtir sa stratégie digitale en Arabie saoudite et aux Émirats arabes unis en 2026.</span><span class="lang-en">Internet users, mobile, social media, advertising and e-commerce: the verified numbers you need to build a digital strategy for Saudi Arabia and the United Arab Emirates in 2026.</span></p>
+            <span class="hub-card-link"><span class="lang-fr">Lire l'article</span><span class="lang-en">Read the article</span> <span class="arrow">→</span></span>
+          </div>
         </a>
-        <a href="/realisations" class="work-card reveal d1">
-          <div class="work-visual v2"><span class="badge" data-i18n="common.concept"></span><span class="mark"><em>Solène</em></span></div>
-          <div class="work-meta"><h3>Solène</h3><span data-i18n="p2.cat"></span></div>
+        <a class="hub-card reveal" href="/media-hub/marketing-offline-maroc">
+          <div class="hub-cover tone-1" aria-hidden="true"><span class="hub-cover-cat"><span class="lang-fr">Marketing offline</span><span class="lang-en">Offline marketing</span></span><span class="hub-cover-title"><span class="lang-fr">Le marketing offline au Maroc : ce qui marche encore</span><span class="lang-en">Offline marketing in Morocco: what still works</span></span><span class="hub-cover-foot"><svg class="hub-mark" viewBox="46 14 54 74" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M51.5 32V19.5H83A11.5 11.5 0 0 1 94.5 31V37.5"/><path d="M81 34.5H61A9.5 9.5 0 0 0 51.5 44V82H81A13.5 13.5 0 0 0 94.5 68.5V60.5A13.5 13.5 0 0 0 81 47H63V70.5"/></svg><span><span class="lang-fr">Maroc</span><span class="lang-en">Morocco</span></span></span></div>
+          <div class="hub-card-body">
+            <span class="hub-card-meta"><span class="lang-fr">Maroc</span><span class="lang-en">Morocco</span> · 7 min</span>
+            <h3><span class="lang-fr">Le marketing offline au Maroc : ce qui marche encore</span><span class="lang-en">Offline marketing in Morocco: what still works</span></h3>
+            <p><span class="lang-fr">Télévision, radio, affichage, événementiel : au Maroc, les médias hors ligne gardent des audiences massives. Les chiffres 2024-2026 et les méthodes pour les relier au digital.</span><span class="lang-en">TV, radio, outdoor and events: in Morocco, offline media still deliver massive audiences. The 2024-2026 numbers, and practical ways to connect them to digital.</span></p>
+            <span class="hub-card-link"><span class="lang-fr">Lire l'article</span><span class="lang-en">Read the article</span> <span class="arrow">→</span></span>
+          </div>
+        </a>
+        <a class="hub-card reveal" href="/media-hub/vision-2030-marques">
+          <div class="hub-cover tone-2" aria-hidden="true"><span class="hub-cover-cat"><span class="lang-fr">Stratégie de marque</span><span class="lang-en">Brand strategy</span></span><span class="hub-cover-title"><span class="lang-fr">Vision 2030 : ce que la transformation saoudienne change pour les marques</span><span class="lang-en">Vision 2030: what Saudi Arabia’s transformation means for brands</span></span><span class="hub-cover-foot"><svg class="hub-mark" viewBox="46 14 54 74" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M51.5 32V19.5H83A11.5 11.5 0 0 1 94.5 31V37.5"/><path d="M81 34.5H61A9.5 9.5 0 0 0 51.5 44V82H81A13.5 13.5 0 0 0 94.5 68.5V60.5A13.5 13.5 0 0 0 81 47H63V70.5"/></svg><span><span class="lang-fr">Arabie saoudite</span><span class="lang-en">Saudi Arabia</span></span></span></div>
+          <div class="hub-card-body">
+            <span class="hub-card-meta"><span class="lang-fr">Arabie saoudite</span><span class="lang-en">Saudi Arabia</span> · 7 min</span>
+            <h3><span class="lang-fr">Vision 2030 : ce que la transformation saoudienne change pour les marques</span><span class="lang-en">Vision 2030: what Saudi Arabia’s transformation means for brands</span></h3>
+            <p><span class="lang-fr">Tourisme record, loisirs, place des femmes, consommation mobile : Vision 2030 redessine le marché saoudien. Chiffres clés 2025-2026 et ce que les marques doivent en tirer pour y réussir.</span><span class="lang-en">Record tourism, entertainment, women in the workforce, mobile-first consumers: Vision 2030 is reshaping the Saudi market. Key 2025-2026 figures and what brands should take from them.</span></p>
+            <span class="hub-card-link"><span class="lang-fr">Lire l'article</span><span class="lang-en">Read the article</span> <span class="arrow">→</span></span>
+          </div>
         </a>
       </div>
     </div>
   </section>
+  <!-- HUB:END -->
 
   <section class="quote">
     <div class="container">
@@ -131,27 +152,6 @@
         <div class="step reveal d1"><span class="n">02</span><h3 data-i18n="step2.title"></h3><p data-i18n="step2.text"></p></div>
         <div class="step reveal d2"><span class="n">03</span><h3 data-i18n="step3.title"></h3><p data-i18n="step3.text"></p></div>
         <div class="step reveal d3"><span class="n">04</span><h3 data-i18n="step4.title"></h3><p data-i18n="step4.text"></p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="founders-section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow reveal" data-i18n="founders.eyebrow"></span>
-          <h2 class="h2 reveal d1" data-i18n="founders.title"></h2>
-        </div>
-      </div>
-      <div class="founders">
-        <figure class="founder reveal">
-          <blockquote data-i18n="founders.ghita.quote"></blockquote>
-          <figcaption><img src="assets/img/team-ghita-sm.jpg" alt="" width="56" height="56"><span><strong>Ghita</strong><span data-i18n="team.ghita.role"></span></span></figcaption>
-        </figure>
-        <figure class="founder dark reveal d1">
-          <blockquote data-i18n="founders.zak.quote"></blockquote>
-          <figcaption><img src="assets/img/team-zak-sm.jpg" alt="" width="56" height="56"><span><strong>Zak</strong><span data-i18n="team.zak.role"></span></span></figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -184,8 +184,8 @@
 
 <footer id="site-footer"></footer>
 
-<script src="assets/js/i18n.js?v=14"></script>
-<script src="assets/js/main.js?v=14"></script>
-<script src="assets/js/neon.js?v=14"></script>
+<script src="assets/js/i18n.js?v=17"></script>
+<script src="assets/js/main.js?v=17"></script>
+<script src="assets/js/neon.js?v=17"></script>
 </body>
 </html>

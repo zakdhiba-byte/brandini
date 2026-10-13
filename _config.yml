@@ -3,3 +3,5 @@ exclude:
   - CLAUDE.md
   - README.md
   - _apercu
+  - tools
+  - media-hub/_content

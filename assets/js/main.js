@@ -60,7 +60,7 @@
   var navItems = [
     ["/", "nav.home", "home"],
     ["/services", "nav.services", "services"],
-    ["/realisations", "nav.work", "work"],
+    ["/media-hub/", "nav.work", "hub"],
     ["/agence", "nav.agency", "agency"],
     ["/contact", "nav.contact", "contact"]
   ];
