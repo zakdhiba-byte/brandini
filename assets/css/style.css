@@ -2127,3 +2127,24 @@ html:not([data-theme="dark"]) .cta h2 em { -webkit-text-stroke: 0; }
   .crew-card { grid-template-columns: 88px 1fr; padding: 20px; }
   .crew-photo { width: 88px; height: 88px; }
 }
+
+/* Thème sombre : cartes blanches → jaunes au survol */
+html[data-theme="dark"] .crew-card {
+  background: linear-gradient(160deg, #ffffff 0%, #eceef3 100%);
+  color: #16171d;
+  box-shadow: 0 26px 50px -30px rgba(0, 0, 0, .9);
+}
+html[data-theme="dark"] .crew-card::before {
+  background:
+    radial-gradient(90% 70% at 100% 0%, rgba(255, 255, 255, .55), transparent 60%),
+    linear-gradient(160deg, #ffe066 0%, #fed23e 55%, #f5bf12 100%);
+}
+html[data-theme="dark"] .crew-card:hover { color: #16171d; box-shadow: 0 26px 50px -26px rgba(254, 210, 62, .55); }
+html[data-theme="dark"] .crew-card .crew-role,
+html[data-theme="dark"] .crew-card:hover .crew-role { color: #6c3cff; }
+html[data-theme="dark"] .crew-card .crew-bio,
+html[data-theme="dark"] .crew-card:hover .crew-bio { color: rgba(22, 23, 29, .75); }
+html[data-theme="dark"] .crew-card .crew-li { background: #0a66c2; color: #fff; }
+html[data-theme="dark"] .crew-card:hover .crew-li { background: #16171d; color: #fff; }
+html[data-theme="dark"] .crew-photo { box-shadow: 0 0 0 6px rgba(22, 23, 29, .06), 0 0 24px rgba(254, 210, 62, .35); }
+html[data-theme="dark"] .crew-card:hover .crew-photo { background: #16171d; }
