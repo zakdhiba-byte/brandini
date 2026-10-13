@@ -79,6 +79,10 @@
           '<li class="nav-cta"><a href="/contact" data-i18n="nav.cta"></a></li>' +
         "</ul>" +
         '<div class="nav-right">' +
+          '<button type="button" class="theme-toggle" aria-label="Thème sombre / clair" title="Thème sombre / clair">' +
+            '<svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>' +
+            '<svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg>' +
+          '</button>' +
           '<div class="lang-switch" role="group" aria-label="Language">' +
             '<button type="button" data-lang="fr">FR</button>' +
             '<button type="button" data-lang="en">EN</button>' +
@@ -164,6 +168,27 @@
     } catch (e) {}
     return (navigator.language || "fr").toLowerCase().indexOf("fr") === 0 ? "fr" : "en";
   }
+
+  /* ---------- Thème clair / sombre ---------- */
+
+  function applyTheme(t) {
+    var dark = t === "dark";
+    if (dark) document.documentElement.setAttribute("data-theme", "dark");
+    else document.documentElement.removeAttribute("data-theme");
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", dark ? "#0e0f14" : "#f4f5f7");
+    var b = document.querySelector(".theme-toggle");
+    if (b) b.setAttribute("aria-pressed", dark ? "true" : "false");
+  }
+  applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".theme-toggle")) return;
+    var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.documentElement.classList.add("theme-anim");
+    applyTheme(next);
+    try { localStorage.setItem("brandini-theme", next); } catch (err) {}
+    setTimeout(function () { document.documentElement.classList.remove("theme-anim"); }, 600);
+  });
 
   function applyLang(lang) {
     var dict = (window.I18N && window.I18N[lang]) || {};
