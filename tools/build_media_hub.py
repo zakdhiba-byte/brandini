@@ -29,7 +29,7 @@ MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "Au
 FONTS = "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
 
 MARK = ('<svg class="hub-mark" viewBox="46 14 54 74" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">'
-        '<path d="M51.5 32V19.5H83A11.5 11.5 0 0 1 94.5 31V37.5"/>'
+        '<path stroke="#f2d27d" d="M51.5 32V19.5H83A11.5 11.5 0 0 1 94.5 31V37.5"/>'
         '<path d="M81 34.5H61A9.5 9.5 0 0 0 51.5 44V82H81A13.5 13.5 0 0 0 94.5 68.5V60.5A13.5 13.5 0 0 0 81 47H63V70.5"/></svg>')
 
 

@@ -15,7 +15,7 @@ Site vitrine statique (HTML/CSS/JS), hébergé gratuitement sur GitHub Pages. Pa
 | `assets/js/i18n.js` | **Tous les textes FR/EN** : c'est ici qu'on modifie le contenu |
 | `assets/js/main.js` | Header/footer communs, e-mail et réseaux sociaux (en haut du fichier) |
 | `assets/css/style.css` | Couleurs et polices dans `:root` |
-| `assets/img/logo*.svg` | Logo vectorisé (monogramme, logo complet, version fond jaune) |
+| `assets/img/logo*.svg` | Logo vectorisé (monogramme, logo complet, version fond blanc) |
 
 Les numéros WhatsApp de Ghita et Zak sont dans `TEAM`, en haut de `assets/js/main.js`.
 
