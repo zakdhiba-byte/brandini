@@ -31,6 +31,8 @@ window.I18N = {
     "crew.title": "Les talents qui donnent vie à vos projets",
     "crew.sara.role": "Visual Storyteller",
     "crew.sara.bio": "Graphiste et designer, elle transforme les messages en visuels qui racontent une histoire : identités, infographies, contenus social media.",
+    "crew.zaineb.role": "Brand Voice Architect",
+    "crew.zaineb.bio": "Professeure d'anglais certifiée CELTA et coach certifiée, elle définit le ton et les mots de vos marques pour des messages clairs, justes et qui touchent.",
 
     /* Frise « Notre histoire » */
     "story.title": "De l'événementiel à <em>la performance.</em>",
@@ -318,6 +320,8 @@ window.I18N = {
     "crew.title": "The talent bringing your projects to life",
     "crew.sara.role": "Visual Storyteller",
     "crew.sara.bio": "A graphic designer who turns messages into visuals that tell a story: identities, infographics, social media content.",
+    "crew.zaineb.role": "Brand Voice Architect",
+    "crew.zaineb.bio": "A CELTA-certified English teacher and certified coach, she shapes the tone and words of your brand for messages that are clear, precise and moving.",
 
     "mq.strategy": "Brand strategy",
     "mq.identity": "Visual identity",
