@@ -26,6 +26,12 @@ window.I18N = {
     "tag.booking": "Booking d'artistes",
     "tag.influence": "Influence",
 
+    /* Équipe : deuxième cercle */
+    "crew.eyebrow": "Et toute l'équipe",
+    "crew.title": "Les talents qui donnent vie à vos projets",
+    "crew.sara.role": "Visual Storyteller",
+    "crew.sara.bio": "Graphiste et designer, elle transforme les messages en visuels qui racontent une histoire : identités, infographies, contenus social media.",
+
     /* Frise « Notre histoire » */
     "story.title": "De l'événementiel à <em>la performance.</em>",
     "story.lead": "Deux trajectoires complémentaires, entre le Maroc, le Golfe et l'Europe, qui ont fini par se rejoindre.",
@@ -129,9 +135,9 @@ window.I18N = {
     /* WhatsApp & équipe */
     "wa.choose": "Écrivez-nous sur WhatsApp :",
     "wa.title": "Écrivez-nous directement",
-    "team.zak.role": "Managing Partner & Head of Marketing",
+    "team.zak.role": "Managing Partner",
     "team.zak.zone": "France · Dubaï",
-    "team.ghita.role": "Founder & Head of Operations",
+    "team.ghita.role": "Founder & CEO",
     "team.ghita.zone": "Maroc · Arabie saoudite",
     "team.eyebrow": "L'équipe",
     "team.title": "Deux fondateurs, <em>un même cap.</em>",
@@ -263,7 +269,7 @@ window.I18N = {
     "agency.lead": "Brandini réunit deux savoir-faire rarement assis à la même table : la construction de marque, née dans l'événementiel et les relations presse, et la performance média, forgée auprès des grandes marques du Golfe.",
     "agency.story1": "Brandini est née en 2022 d'une conviction de sa fondatrice, Ghita Lasfar : une marque se construit avec la même exigence qu'un grand événement. Rien n'y est laissé au hasard, du positionnement jusqu'au moindre détail d'exécution.",
     "agency.story2": "Diplômée en communication d'Al Akhawayn University, passée par Ewha Womans University à Séoul, Ghita a fait ses armes entre relations presse, événementiel et conseil : consultante en communication pour l'UNESCO au Maghreb, lancements de marques à Casablanca, puis pilotage de comptes clés sur les plus grands salons saoudiens, de LEAP à Cityscape.",
-    "agency.story3": "En 2026, Zak Dhiba la rejoint comme Managing Partner et Head of Marketing. Basé à Dubaï et titulaire d'un MBA, il a passé près de dix ans côté médias et marques dans la région : stratégies média pour Rolls-Royce, Porsche, Audi ou ADIB, partenariats de marque pour Danone, L'Oréal ou Red Bull, puis marketing B2B tech sur quatre marchés. Ensemble, ils font de Brandini une agence où l'image de marque et la performance avancent enfin au même rythme.",
+    "agency.story3": "En 2026, Zak Dhiba la rejoint comme Managing Partner. Basé à Dubaï et titulaire d'un MBA, il a passé près de dix ans côté médias et marques dans la région : stratégies média pour Rolls-Royce, Porsche, Audi ou ADIB, partenariats de marque pour Danone, L'Oréal ou Red Bull, puis marketing B2B tech sur quatre marchés. Ensemble, ils font de Brandini une agence où l'image de marque et la performance avancent enfin au même rythme.",
     "agency.values.eyebrow": "Nos valeurs",
     "agency.values.title": "Ce qui nous <em>guide.</em>",
     "value1.title": "Clarté",
@@ -308,6 +314,11 @@ window.I18N = {
   },
 
   en: {
+    "crew.eyebrow": "And the whole team",
+    "crew.title": "The talent bringing your projects to life",
+    "crew.sara.role": "Visual Storyteller",
+    "crew.sara.bio": "A graphic designer who turns messages into visuals that tell a story: identities, infographics, social media content.",
+
     "mq.strategy": "Brand strategy",
     "mq.identity": "Visual identity",
     "mq.naming": "Naming",
@@ -422,9 +433,9 @@ window.I18N = {
 
     "wa.choose": "Message us on WhatsApp:",
     "wa.title": "Message us directly",
-    "team.zak.role": "Managing Partner & Head of Marketing",
+    "team.zak.role": "Managing Partner",
     "team.zak.zone": "France · Dubai",
-    "team.ghita.role": "Founder & Head of Operations",
+    "team.ghita.role": "Founder & CEO",
     "team.ghita.zone": "Morocco · Saudi Arabia",
     "team.eyebrow": "The team",
     "team.title": "Two founders, <em>one direction.</em>",
@@ -548,7 +559,7 @@ window.I18N = {
     "agency.lead": "Brandini brings together two skill sets that rarely share a table: brand building, shaped by events and PR, and media performance, honed with the Gulf's biggest brands.",
     "agency.story1": "Brandini was founded in 2022 on a conviction held by its founder, Ghita Lasfar: a brand should be built with the same rigour as a major event. Nothing is left to chance, from positioning down to the smallest detail of execution.",
     "agency.story2": "A communications graduate of Al Akhawayn University who also studied at Ewha Womans University in Seoul, Ghita cut her teeth across PR, events and consulting: communications consultant for UNESCO in the Maghreb, brand launches in Casablanca, then key accounts on Saudi Arabia's largest exhibitions, from LEAP to Cityscape.",
-    "agency.story3": "In 2026, Zak Dhiba joined as Managing Partner and Head of Marketing. Based in Dubai and holding an MBA, he has spent nearly ten years on the media and brand side across the region: media strategy for Rolls-Royce, Porsche, Audi and ADIB, brand partnerships for Danone, L'Oréal and Red Bull, then B2B tech marketing across four markets. Together, they have made Brandini an agency where brand image and performance finally move at the same pace.",
+    "agency.story3": "In 2026, Zak Dhiba joined as Managing Partner. Based in Dubai and holding an MBA, he has spent nearly ten years on the media and brand side across the region: media strategy for Rolls-Royce, Porsche, Audi and ADIB, brand partnerships for Danone, L'Oréal and Red Bull, then B2B tech marketing across four markets. Together, they have made Brandini an agency where brand image and performance finally move at the same pace.",
     "agency.values.eyebrow": "Our values",
     "agency.values.title": "What <em>drives</em> us.",
     "value1.title": "Clarity",
