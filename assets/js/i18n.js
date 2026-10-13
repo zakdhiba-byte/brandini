@@ -6,6 +6,22 @@
 
 window.I18N = {
   fr: {
+    /* Frise « Notre histoire » */
+    "story.title": "De l'événementiel à <em>la performance.</em>",
+    "story.lead": "Deux trajectoires complémentaires, entre le Maroc, le Golfe et l'Europe, qui ont fini par se rejoindre.",
+    "tl.1.t": "Communication & événementiel",
+    "tl.1.d": "Consultante communication pour l'UNESCO au Maghreb, puis lancements de marques à Casablanca.",
+    "tl.2.t": "Les médias dans le Golfe",
+    "tl.2.d": "Stratégies média à Dubaï pour Rolls-Royce, Porsche, Audi ou ADIB.",
+    "tl.3.t": "Partenariats de grandes marques",
+    "tl.3.d": "Danone, L'Oréal, Red Bull : des partenariats pensés pour la performance.",
+    "tl.4.t": "Naissance de Brandini",
+    "tl.4.d": "Ghita fonde l'agence : identité, positionnement, communication 360.",
+    "tl.5.t": "Les grands salons saoudiens",
+    "tl.5.d": "Comptes clés sur LEAP, Cityscape et le World Defense Show à Riyad.",
+    "tl.6.t": "La marque rencontre la performance",
+    "tl.6.d": "Zak rejoint Brandini comme Managing Partner. Une agence, quatre marchés.",
+
     /* Agence : faits & fondateurs */
     "facts.kicker": "Fondée en",
     "facts.markets": "marchés : France, Émirats, Maroc, Arabie saoudite",
@@ -272,6 +288,21 @@ window.I18N = {
   },
 
   en: {
+    "story.title": "From events to <em>performance.</em>",
+    "story.lead": "Two complementary paths across Morocco, the Gulf and Europe, that eventually came together.",
+    "tl.1.t": "Communications & events",
+    "tl.1.d": "Communications consultant for UNESCO in the Maghreb, then brand launches in Casablanca.",
+    "tl.2.t": "Media in the Gulf",
+    "tl.2.d": "Media strategy in Dubai for Rolls-Royce, Porsche, Audi and ADIB.",
+    "tl.3.t": "Partnerships with major brands",
+    "tl.3.d": "Danone, L'Oréal, Red Bull: partnerships built for performance.",
+    "tl.4.t": "Brandini is born",
+    "tl.4.d": "Ghita founds the agency: identity, positioning, 360° communication.",
+    "tl.5.t": "Saudi Arabia's biggest shows",
+    "tl.5.d": "Key accounts on LEAP, Cityscape and the World Defense Show in Riyadh.",
+    "tl.6.t": "Brand meets performance",
+    "tl.6.d": "Zak joins Brandini as Managing Partner. One agency, four markets.",
+
     "facts.kicker": "Founded in",
     "facts.markets": "markets: France, UAE, Morocco, Saudi Arabia",
     "facts.partners": "partners, one point of contact per project",

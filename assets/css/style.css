@@ -1633,3 +1633,135 @@ html[lang="en"] .lang-fr { display: none !important; }
 }
 .fc-wa svg { width: 18px; height: 18px; flex: none; }
 .fc-wa:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -10px rgba(37, 211, 102, .8); }
+
+/* ---------- Bouton LinkedIn des cartes fondateurs ---------- */
+.fc-li {
+  align-self: flex-start;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 18px;
+  border-radius: 999px;
+  background: #fff;
+  color: #0a66c2;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform .3s var(--ease), box-shadow .3s;
+}
+.fc-li svg { width: 17px; height: 17px; flex: none; }
+.fc-li:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px rgba(255, 255, 255, .55); }
+
+/* ---------- Frise « Notre histoire » ---------- */
+.history-section { padding-top: 0; }
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 9px;
+  height: 2px;
+  background: linear-gradient(90deg, #6c3cff, #16171d 45%, #fed23e 60%, #6c3cff 85%, #16171d);
+  opacity: .25;
+}
+.tl-item {
+  position: relative;
+  padding: 34px 18px 22px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 22px;
+  transition: transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.tl-item:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -28px rgba(22, 23, 29, .45); }
+.tl-dot {
+  position: absolute;
+  top: -22px;
+  left: 18px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--ink);
+}
+.tl-year {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -.05em;
+  line-height: 1;
+}
+.tl-who {
+  align-self: flex-start;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #fff;
+}
+.tl-ghita { background: linear-gradient(135deg, #7d55ff, #4a24c4); }
+.tl-zak { background: linear-gradient(135deg, #3a3c4a, #0b0b0f); }
+.tl-brand { background: var(--ink); color: #fed23e; }
+.tl-item h3 { font-size: 16px; letter-spacing: -.02em; line-height: 1.25; margin-top: 4px; }
+.tl-item p { margin: 0; font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); }
+
+.tl-item:has(.tl-ghita) .tl-dot { border-color: #6c3cff; background: #6c3cff; box-shadow: 0 0 0 5px rgba(108, 60, 255, .15); }
+.tl-item:has(.tl-zak) .tl-dot { border-color: #16171d; background: #16171d; box-shadow: 0 0 0 5px rgba(22, 23, 29, .1); }
+
+/* Moment clé : création de Brandini */
+.tl-key {
+  background: linear-gradient(160deg, #ffe066 0%, #fed23e 60%, #f5bf12 100%);
+  border-color: transparent;
+  box-shadow: 0 24px 50px -30px rgba(170, 120, 0, .6);
+}
+.tl-key p { color: rgba(22, 23, 29, .75); }
+.tl-key .tl-dot { border-color: #fed23e; background: #fed23e; box-shadow: 0 0 0 6px rgba(254, 210, 62, .3), 0 0 18px rgba(254, 210, 62, .8); }
+/* Aujourd'hui */
+.tl-now {
+  background:
+    radial-gradient(120% 140% at 0% 0%, #9b7bff 0%, transparent 55%),
+    linear-gradient(135deg, #6c3cff 0%, #3b1a9e 100%);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 24px 50px -28px rgba(108, 60, 255, .8);
+}
+.tl-now p { color: rgba(255, 255, 255, .8); }
+.tl-now .tl-who { background: rgba(255, 255, 255, .16); }
+
+@media (max-width: 1100px) {
+  .timeline { grid-template-columns: repeat(3, 1fr); row-gap: 8px; }
+  .timeline::before { display: none; }
+}
+@media (max-width: 760px) {
+  .timeline { grid-template-columns: 1fr; gap: 12px; padding-left: 26px; }
+  .timeline::before {
+    display: block;
+    left: 8px; right: auto; top: 6px; bottom: 6px;
+    width: 2px; height: auto;
+    background: linear-gradient(180deg, #6c3cff, #16171d 40%, #fed23e 60%, #6c3cff);
+  }
+  .tl-item { margin-top: 0; padding: 18px 18px 18px; display: grid; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 6px; align-items: center; }
+  .tl-item:hover { transform: none; }
+  .tl-dot { top: 22px; left: -27px; width: 16px; height: 16px; }
+  .tl-year { font-size: 24px; }
+  .tl-who { justify-self: start; }
+  .tl-item h3, .tl-item p { grid-column: 1 / -1; }
+  .tl-item h3 { margin-top: 2px; }
+}
+.founders-cards-section .section-head,
+.history-section .section-head { grid-template-columns: 1.5fr 1fr; }
+@media (max-width: 860px) {
+  .founders-cards-section .section-head,
+  .history-section .section-head { grid-template-columns: 1fr; }
+}
