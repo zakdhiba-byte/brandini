@@ -6,6 +6,20 @@
 
 window.I18N = {
   fr: {
+    /* Agence : faits & fondateurs */
+    "facts.kicker": "Fondée en",
+    "facts.markets": "marchés : France, Émirats, Maroc, Arabie saoudite",
+    "facts.partners": "associés, un seul interlocuteur par projet",
+    "facts.years": "ans d'expérience cumulée",
+    "story.eyebrow": "Notre histoire",
+    "team.lead": "L'une vient de la marque et de l'événementiel, l'autre des médias et de la performance. Vous profitez des deux, sur chaque projet.",
+    "team.before": "Avant Brandini",
+
+    /* Parcours */
+    "team.ghita.bio": "Branding, relations presse et événementiel. Des projets menés au Maroc, aux Émirats, en Arabie saoudite, au Qatar et en Corée.",
+    "team.zak.bio": "Stratégie média, performance et partenariats de marque. Près de dix ans auprès des grandes marques du Golfe et de la région EMEA.",
+    "track.label": "Avant Brandini, nos fondateurs ont travaillé sur :",
+
     /* Media Hub */
     "hub.eyebrow": "Media Hub",
     "hub.title": "Comprendre les marchés pour mieux <em>communiquer.</em>",
@@ -71,7 +85,7 @@ window.I18N = {
 
     /* Chiffres clés */
     "stats.years.unit": "ans",
-    "stats.years": "d'expérience moyenne dans l'équipe",
+    "stats.years": "d'expérience cumulée dans l'équipe",
     "stats.clients": "clients accompagnés en 2026",
     "stats.budget": "de budgets publicitaires gérés sur Meta & Google",
     "stats.views": "de vues cumulées, toutes plateformes",
@@ -84,7 +98,7 @@ window.I18N = {
     "team.ghita.role": "Founder & Head of Operations",
     "team.ghita.zone": "Maroc · Arabie saoudite",
     "team.eyebrow": "L'équipe",
-    "team.title": "Les visages <em>derrière</em> la marque.",
+    "team.title": "Deux fondateurs, <em>un même cap.</em>",
 
     /* Navigation */
     "nav.home": "Accueil",
@@ -209,11 +223,11 @@ window.I18N = {
 
     /* Page Agence */
     "agency.eyebrow": "L'agence",
-    "agency.title": "Petite équipe, <em>grandes</em> idées.",
-    "agency.lead": "Brandini est une agence de branding et de marketing. On aide les marques à se démarquer, avec de la stratégie, du goût et beaucoup d'exigence.",
-    "agency.story1": "On croit qu'une marque forte n'est pas réservée aux grandes entreprises. Avec les bonnes idées et un vrai travail de fond, n'importe quel projet peut devenir une marque qu'on reconnaît au premier coup d'œil.",
-    "agency.story2": "Chez Brandini, chaque projet commence par l'écoute. On prend le temps de comprendre votre métier, vos clients et votre marché avant de proposer quoi que ce soit.",
-    "agency.story3": "Ensuite, on crée. Sans formule toute faite, sans template : une marque pensée pour vous, et pour durer.",
+    "agency.title": "Deux parcours, <em>une</em> agence.",
+    "agency.lead": "Brandini réunit deux savoir-faire rarement assis à la même table : la construction de marque, née dans l'événementiel et les relations presse, et la performance média, forgée auprès des grandes marques du Golfe.",
+    "agency.story1": "Brandini est née en 2022 d'une conviction de sa fondatrice, Ghita Lasfar : une marque se construit avec la même exigence qu'un grand événement. Rien n'y est laissé au hasard, du positionnement jusqu'au moindre détail d'exécution.",
+    "agency.story2": "Diplômée en communication d'Al Akhawayn University, passée par Ewha Womans University à Séoul, Ghita a fait ses armes entre relations presse, événementiel et conseil : consultante en communication pour l'UNESCO au Maghreb, lancements de marques à Casablanca, puis pilotage de comptes clés sur les plus grands salons saoudiens, de LEAP à Cityscape.",
+    "agency.story3": "En 2026, Zak Dhiba la rejoint comme Managing Partner et Head of Marketing. Basé à Dubaï et titulaire d'un MBA, il a passé près de dix ans côté médias et marques dans la région : stratégies média pour Rolls-Royce, Porsche, Audi ou ADIB, partenariats de marque pour Danone, L'Oréal ou Red Bull, puis marketing B2B tech sur quatre marchés. Ensemble, ils font de Brandini une agence où l'image de marque et la performance avancent enfin au même rythme.",
     "agency.values.eyebrow": "Nos valeurs",
     "agency.values.title": "Ce qui nous <em>guide.</em>",
     "value1.title": "Clarté",
@@ -258,6 +272,18 @@ window.I18N = {
   },
 
   en: {
+    "facts.kicker": "Founded in",
+    "facts.markets": "markets: France, UAE, Morocco, Saudi Arabia",
+    "facts.partners": "partners, one point of contact per project",
+    "facts.years": "years of combined experience",
+    "story.eyebrow": "Our story",
+    "team.lead": "One comes from branding and events, the other from media and performance. You get both, on every project.",
+    "team.before": "Before Brandini",
+
+    "team.ghita.bio": "Branding, PR and events. Projects delivered in Morocco, the UAE, Saudi Arabia, Qatar and Korea.",
+    "team.zak.bio": "Media strategy, performance and brand partnerships. Nearly ten years with leading brands across the Gulf and EMEA.",
+    "track.label": "Before Brandini, our founders worked on:",
+
     "hub.eyebrow": "Media Hub",
     "hub.title": "Understand the markets, <em>communicate better.</em>",
     "hub.lead": "Insights, figures and marketing trends across the Middle East, Morocco and France. Sourced data to make informed decisions.",
@@ -319,7 +345,7 @@ window.I18N = {
     "offer.360.f5": "1 month of follow-up",
 
     "stats.years.unit": "yrs",
-    "stats.years": "average experience across the team",
+    "stats.years": "combined experience across the team",
     "stats.clients": "clients supported in 2026",
     "stats.budget": "in ad budgets managed on Meta & Google",
     "stats.views": "cumulative views across platforms",
@@ -331,7 +357,7 @@ window.I18N = {
     "team.ghita.role": "Founder & Head of Operations",
     "team.ghita.zone": "Morocco · Saudi Arabia",
     "team.eyebrow": "The team",
-    "team.title": "The faces <em>behind</em> the brand.",
+    "team.title": "Two founders, <em>one direction.</em>",
 
     "nav.home": "Home",
     "nav.services": "Services",
@@ -448,11 +474,11 @@ window.I18N = {
     "p6.cat": "Campaign",
 
     "agency.eyebrow": "Agency",
-    "agency.title": "Small team, <em>big</em> ideas.",
-    "agency.lead": "Brandini is a branding and marketing agency. We help brands stand out with strategy, taste and high standards.",
-    "agency.story1": "We believe a strong brand isn't just for big companies. With the right ideas and real groundwork, any project can become a brand people recognise at first glance.",
-    "agency.story2": "At Brandini, every project starts with listening. We take the time to understand your business, your customers and your market before proposing anything.",
-    "agency.story3": "Then we create. No formulas, no templates: a brand designed for you, and built to last.",
+    "agency.title": "Two journeys, <em>one</em> agency.",
+    "agency.lead": "Brandini brings together two skill sets that rarely share a table: brand building, shaped by events and PR, and media performance, honed with the Gulf's biggest brands.",
+    "agency.story1": "Brandini was founded in 2022 on a conviction held by its founder, Ghita Lasfar: a brand should be built with the same rigour as a major event. Nothing is left to chance, from positioning down to the smallest detail of execution.",
+    "agency.story2": "A communications graduate of Al Akhawayn University who also studied at Ewha Womans University in Seoul, Ghita cut her teeth across PR, events and consulting: communications consultant for UNESCO in the Maghreb, brand launches in Casablanca, then key accounts on Saudi Arabia's largest exhibitions, from LEAP to Cityscape.",
+    "agency.story3": "In 2026, Zak Dhiba joined as Managing Partner and Head of Marketing. Based in Dubai and holding an MBA, he has spent nearly ten years on the media and brand side across the region: media strategy for Rolls-Royce, Porsche, Audi and ADIB, brand partnerships for Danone, L'Oréal and Red Bull, then B2B tech marketing across four markets. Together, they have made Brandini an agency where brand image and performance finally move at the same pace.",
     "agency.values.eyebrow": "Our values",
     "agency.values.title": "What <em>drives</em> us.",
     "value1.title": "Clarity",
