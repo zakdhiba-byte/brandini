@@ -7,8 +7,8 @@
 
   /* WhatsApp — numéros au format international, sans "+" ni espaces */
   var TEAM = [
-    { name: "Ghita", initials: "G", photo: "assets/img/team-ghita-sm.jpg", role: "team.ghita.role", zone: "team.ghita.zone", flags: ["ma", "sa"], theme: "violet", wa: "212680006050" },
-    { name: "Zak", initials: "Z", photo: "assets/img/team-zak-sm.jpg", role: "team.zak.role", zone: "team.zak.zone", flags: ["fr", "ae"], theme: "noir", wa: "971507250385" }
+    { name: "Ghita", initials: "G", photo: "assets/img/team-ghita-sm.jpg", role: "team.ghita.role", zone: "team.ghita.zone", flags: ["ma", "sa"], theme: "violet", wa: "212680006050", linkedin: "https://www.linkedin.com/in/lasfar-ghita/" },
+    { name: "Zak", initials: "Z", photo: "assets/img/team-zak-sm.jpg", role: "team.zak.role", zone: "team.zak.zone", flags: ["fr", "ae"], theme: "noir", wa: "971507250385", linkedin: "https://www.linkedin.com/in/zakdhiba/" }
   ];
 
   /* Drapeaux (SVG inline, s'affichent partout, y compris sous Windows) */
@@ -145,8 +145,21 @@
     }
   });
 
+  var LI_SVG =
+    '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>';
+
+  // Page Contact : carte avec deux actions (WhatsApp + LinkedIn)
+  function contactCard(m) {
+    return '<div class="wa-card contact-card wa-' + m.theme + '">' +
+      '<span class="wa-avatar">' + (m.photo ? '<img src="' + m.photo + '" alt="" width="60" height="60">' : m.initials) + "</span>" +
+      '<span class="who"><strong>' + m.name + " " + flagsHtml(m.flags) + '</strong><span data-i18n="' + m.role + '"></span></span>' +
+      '<span class="cc-actions">' +
+        '<a class="cc-btn cc-wa" data-wa="' + m.wa + '" href="https://wa.me/' + m.wa + '" target="_blank" rel="noopener" aria-label="WhatsApp ' + m.name + '">' + WA_SVG + "</a>" +
+        '<a class="cc-btn cc-li" href="' + m.linkedin + '" target="_blank" rel="noopener" aria-label="LinkedIn ' + m.name + '">' + LI_SVG + "</a>" +
+      "</span></div>";
+  }
   document.querySelectorAll("[data-wa-cards]").forEach(function (el) {
-    el.innerHTML = TEAM.map(waCard).join("");
+    el.innerHTML = TEAM.map(contactCard).join("");
   });
   document.querySelectorAll("[data-flags]").forEach(function (el) {
     el.innerHTML = flagsHtml(el.getAttribute("data-flags").split(","));
