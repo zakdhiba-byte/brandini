@@ -110,6 +110,7 @@
             '<li><a href="/services" data-i18n="svc.identity"></a></li>' +
             '<li><a href="/services" data-i18n="svc.web"></a></li>' +
             '<li><a href="/services" data-i18n="svc.content"></a></li>' +
+            '<li><a href="/services" data-i18n="svc.events"></a></li>' +
           "</ul></div>" +
           '<div class="footer-col"><h4 data-i18n="footer.contact"></h4><ul>' +
             '<li><a href="mailto:' + CONTACT_EMAIL + '">' + CONTACT_EMAIL + "</a></li>" +

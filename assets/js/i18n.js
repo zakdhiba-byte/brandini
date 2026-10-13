@@ -6,6 +6,26 @@
 
 window.I18N = {
   fr: {
+    /* Bandeau défilant + PR / événementiel */
+    "mq.strategy": "Stratégie de marque",
+    "mq.identity": "Identité visuelle",
+    "mq.naming": "Naming",
+    "mq.web": "Sites web",
+    "mq.content": "Contenu & social media",
+    "mq.ads": "Campagnes Meta & Google",
+    "mq.pr": "Relations presse",
+    "mq.events": "Event management",
+    "mq.booking": "Booking d'artistes",
+    "mq.video": "Production vidéo",
+    "mq.influence": "Influence",
+    "mq.packaging": "Packaging",
+    "svc.events": "Relations presse & événementiel",
+    "services.s7.text": "Relations presse, conception et pilotage d'événements, booking d'artistes et campagnes d'influence. Du communiqué au jour J, on orchestre chaque détail.",
+    "tag.pr": "Relations presse",
+    "tag.eventmgmt": "Event management",
+    "tag.booking": "Booking d'artistes",
+    "tag.influence": "Influence",
+
     /* Frise « Notre histoire » */
     "story.title": "De l'événementiel à <em>la performance.</em>",
     "story.lead": "Deux trajectoires complémentaires, entre le Maroc, le Golfe et l'Europe, qui ont fini par se rejoindre.",
@@ -288,6 +308,25 @@ window.I18N = {
   },
 
   en: {
+    "mq.strategy": "Brand strategy",
+    "mq.identity": "Visual identity",
+    "mq.naming": "Naming",
+    "mq.web": "Websites",
+    "mq.content": "Content & social media",
+    "mq.ads": "Meta & Google Ads",
+    "mq.pr": "Public relations",
+    "mq.events": "Event management",
+    "mq.booking": "Artist booking",
+    "mq.video": "Video production",
+    "mq.influence": "Influencer marketing",
+    "mq.packaging": "Packaging",
+    "svc.events": "PR & events",
+    "services.s7.text": "Press relations, event design and management, artist booking and influencer campaigns. From the press release to the big day, we orchestrate every detail.",
+    "tag.pr": "Public relations",
+    "tag.eventmgmt": "Event management",
+    "tag.booking": "Artist booking",
+    "tag.influence": "Influencer marketing",
+
     "story.title": "From events to <em>performance.</em>",
     "story.lead": "Two complementary paths across Morocco, the Gulf and Europe, that eventually came together.",
     "tl.1.t": "Communications & events",
