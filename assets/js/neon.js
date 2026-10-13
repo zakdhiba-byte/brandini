@@ -9,7 +9,7 @@
   if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-  var COLOR_START = [242, 210, 125];   // or Brandini (tête de la traînée)
+  var COLOR_START = [254, 210, 62];   // jaune Brandini (tête de la traînée)
   var COLOR_END = [95, 130, 220];     // bleu (queue)
   var LIFE = 420;                     // durée de vie d'un point (ms)
   var WIDTH = 7;                      // épaisseur max (px)
