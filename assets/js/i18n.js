@@ -7,7 +7,7 @@
 window.I18N = {
   fr: {
     /* Secteurs, fondateurs, engagements */
-    "sectors.label": "Nos clients 2026 :",
+    "sectors.label": "Nos clients 2026 :",
     "sector.realestate": "Immobilier",
     "sector.ecommerce": "E-commerce",
     "sector.fashion": "Mode",
@@ -15,8 +15,8 @@ window.I18N = {
     "sector.setup": "Création d'entreprise",
     "founders.eyebrow": "Le mot des fondateurs",
     "founders.title": "Pourquoi <em>Brandini.</em>",
-    "founders.ghita.quote": "« Une belle marque qui ne vend pas, c'est un échec. Chez Brandini, chaque choix créatif sert un objectif business clair, et on le mesure. »",
-    "founders.zak.quote": "« On ne livre pas un logo pour disparaître ensuite. On reste à vos côtés jusqu'à ce que la marque performe, en ligne comme sur le terrain. »",
+    "founders.ghita.quote": "« Une belle marque qui ne vend pas, c'est un échec. Chez Brandini, chaque choix créatif sert un objectif business clair, et on le mesure. »",
+    "founders.zak.quote": "« On ne livre pas un logo pour disparaître ensuite. On reste à vos côtés jusqu'à ce que la marque performe, en ligne comme sur le terrain. »",
     "commit.eyebrow": "Nos engagements",
     "commit.title": "Ce sur quoi vous pouvez <em>compter.</em>",
     "commit.1.t": "Réponse sous 48 h",
@@ -24,7 +24,7 @@ window.I18N = {
     "commit.2.t": "Devis gratuit et détaillé",
     "commit.2.d": "Un chiffrage clair, poste par poste, avant tout engagement.",
     "commit.3.t": "Fichiers sources livrés",
-    "commit.3.d": "Votre identité vous appartient : tous les fichiers vous sont remis.",
+    "commit.3.d": "Votre identité vous appartient : tous les fichiers vous sont remis.",
     "commit.4.t": "Un interlocuteur dédié",
     "commit.4.d": "Un seul contact du brief à la livraison, qui connaît votre projet.",
 
@@ -47,9 +47,9 @@ window.I18N = {
     "offer.sig.desc": "Pour une marque cohérente, pensée sur le fond comme sur la forme.",
     "offer.sig.price": "600 €",
     "offer.sig.f1": "Tout l'Essentiel",
-    "offer.sig.f2": "Plateforme de marque : positionnement, valeurs, ton",
+    "offer.sig.f2": "Plateforme de marque : positionnement, valeurs, ton",
     "offer.sig.f3": "Charte graphique complète",
-    "offer.sig.f4": "Déclinaisons : cartes de visite, réseaux sociaux",
+    "offer.sig.f4": "Déclinaisons : cartes de visite, réseaux sociaux",
     "offer.sig.f5": "3 allers-retours",
     "offer.360.name": "360",
     "offer.360.desc": "Pour lancer ou relancer une marque sur tous les canaux.",
@@ -68,7 +68,7 @@ window.I18N = {
     "stats.views": "de vues cumulées, toutes plateformes",
 
     /* WhatsApp & équipe */
-    "wa.choose": "Écrivez-nous sur WhatsApp :",
+    "wa.choose": "Écrivez-nous sur WhatsApp :",
     "wa.title": "Écrivez-nous directement",
     "team.zak.role": "Managing Partner & Head of Marketing",
     "team.zak.zone": "France · Dubaï",
@@ -124,12 +124,12 @@ window.I18N = {
 
     "home.work.eyebrow": "Réalisations",
     "home.work.title": "Des marques qui ont <em>du caractère.</em>",
-    "home.work.lead": "Des marques imaginées par notre studio pour montrer notre façon de penser : identité, digital et contenu.",
+    "home.work.lead": "Des marques imaginées par notre studio pour montrer notre façon de penser : identité, digital et contenu.",
 
     "home.process.eyebrow": "Méthode",
     "home.process.title": "Simple, clair, <em>efficace.</em>",
     "step1.title": "Écouter",
-    "step1.text": "Atelier de découverte : votre activité, vos clients, vos concurrents, vos ambitions.",
+    "step1.text": "Atelier de découverte : votre activité, vos clients, vos concurrents, vos ambitions.",
     "step2.title": "Définir",
     "step2.text": "Stratégie et positionnement. On pose les fondations avant de dessiner quoi que ce soit.",
     "step3.title": "Créer",
@@ -137,10 +137,10 @@ window.I18N = {
     "step4.title": "Déployer",
     "step4.text": "Livraison des fichiers, charte, site, contenus. Votre marque est prête à vivre.",
 
-    "home.manifesto": "« Une marque, ce n'est pas un logo. C'est une promesse que l'on tient, partout, tout le temps. »",
+    "home.manifesto": "« Une marque, ce n'est pas un logo. C'est une promesse que l'on tient, partout, tout le temps. »",
     "home.manifesto.cite": "Le manifeste Brandini",
 
-    "cta.title": "Prêt à faire <em>du bruit</em> ?",
+    "cta.title": "Prêt à faire <em>du bruit</em> ?",
     "cta.text": "Parlez-nous de votre projet. On vous répond sous 48 h avec une première proposition.",
     "cta.btn": "Parlons-en",
 
@@ -150,7 +150,7 @@ window.I18N = {
     "services.lead": "De la stratégie au déploiement, on couvre chaque étape de la vie de votre marque. À la carte ou en accompagnement complet.",
     "services.s1.text": "Analyse de marché, positionnement, plateforme de marque, mission, valeurs et ton de voix. La base de tout ce qui suit.",
     "services.s2.text": "Logo, système typographique, palette de couleurs, iconographie et charte graphique complète, livrée prête à l'emploi.",
-    "services.s3.text": "Trouver le nom juste : recherche créative, vérification de disponibilité et de noms de domaine, slogan.",
+    "services.s3.text": "Trouver le nom juste : recherche créative, vérification de disponibilité et de noms de domaine, slogan.",
     "services.s4.text": "Sites vitrines, landing pages, e-commerce. Design sur-mesure, responsive, optimisé pour le référencement.",
     "services.s5.text": "Ligne éditoriale, calendrier, création de posts, reels et vidéos. On fait vivre votre marque au quotidien.",
     "services.s6.text": "Lancements, campagnes publicitaires, print et événementiel. Des idées qui se voient et qui se retiennent.",
@@ -174,19 +174,19 @@ window.I18N = {
 
     "faq.eyebrow": "Questions fréquentes",
     "faq.title": "Bon à <em>savoir.</em>",
-    "faq.q1": "Combien de temps dure un projet ?",
+    "faq.q1": "Combien de temps dure un projet ?",
     "faq.a1": "Une identité visuelle complète prend en général 4 à 8 semaines. Un site vitrine, 3 à 6 semaines. On vous donne un planning précis dès le devis.",
-    "faq.q2": "Combien ça coûte ?",
+    "faq.q2": "Combien ça coûte ?",
     "faq.a2": "Chaque projet est différent. Après un premier échange, on vous envoie un devis détaillé et transparent, sans surprise.",
-    "faq.q3": "Travaillez-vous avec des petites entreprises ?",
+    "faq.q3": "Travaillez-vous avec des petites entreprises ?",
     "faq.a3": "Oui. On accompagne aussi bien des startups et indépendants que des PME et des groupes. Ce qui compte, c'est l'ambition.",
-    "faq.q4": "Est-ce que je suis propriétaire des créations ?",
+    "faq.q4": "Est-ce que je suis propriétaire des créations ?",
     "faq.a4": "Oui. À la livraison, les droits d'exploitation de votre identité vous sont cédés, avec tous les fichiers sources.",
 
     /* Page Réalisations */
     "work.eyebrow": "Réalisations",
     "work.title": "Le travail <em>parle.</em>",
-    "work.lead": "Nos projets studio : des marques fictives, créées de A à Z par notre équipe pour explorer des univers et montrer notre approche.",
+    "work.lead": "Nos projets studio : des marques fictives, créées de A à Z par notre équipe pour explorer des univers et montrer notre approche.",
     "filter.all": "Tout",
     "filter.identity": "Identité",
     "filter.web": "Web",
@@ -204,7 +204,7 @@ window.I18N = {
     "agency.lead": "Brandini est une agence de branding et de marketing. On aide les marques à se démarquer, avec de la stratégie, du goût et beaucoup d'exigence.",
     "agency.story1": "On croit qu'une marque forte n'est pas réservée aux grandes entreprises. Avec les bonnes idées et un vrai travail de fond, n'importe quel projet peut devenir une marque qu'on reconnaît au premier coup d'œil.",
     "agency.story2": "Chez Brandini, chaque projet commence par l'écoute. On prend le temps de comprendre votre métier, vos clients et votre marché avant de proposer quoi que ce soit.",
-    "agency.story3": "Ensuite, on crée. Sans formule toute faite, sans template : une marque pensée pour vous, et pour durer.",
+    "agency.story3": "Ensuite, on crée. Sans formule toute faite, sans template : une marque pensée pour vous, et pour durer.",
     "agency.values.eyebrow": "Nos valeurs",
     "agency.values.title": "Ce qui nous <em>guide.</em>",
     "value1.title": "Clarté",
@@ -217,7 +217,7 @@ window.I18N = {
     /* Page Contact */
     "contact.eyebrow": "Contact",
     "contact.title": "Parlons de votre <em>projet.</em>",
-    "contact.lead": "Un nouveau nom, une nouvelle identité, un site ? Écrivez-nous sur WhatsApp ou via le formulaire, on revient vers vous sous 48 h.",
+    "contact.lead": "Un nouveau nom, une nouvelle identité, un site ? Écrivez-nous sur WhatsApp ou via le formulaire, on revient vers vous sous 48 h.",
     "contact.email": "E-mail",
     "contact.zone": "Zone",
     "contact.zone.value": "France · Dubaï · Maroc · Arabie saoudite",
@@ -236,7 +236,7 @@ window.I18N = {
     "form.message.ph": "Parlez-nous de votre entreprise, de vos objectifs, de vos délais…",
     "form.send": "Envoyer",
     "form.sending": "Envoi…",
-    "form.ok": "Merci ! Votre message a bien été envoyé. On revient vers vous très vite.",
+    "form.ok": "Merci ! Votre message a bien été envoyé. On revient vers vous très vite.",
     "form.err": "Oups, l'envoi a échoué. Écrivez-nous directement à contact@brandini.pro.",
 
     /* 404 */

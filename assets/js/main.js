@@ -76,6 +76,7 @@
             return '<li><a href="' + n[0] + '" data-i18n="' + n[1] + '"' +
               (page === n[2] ? ' class="active" aria-current="page"' : "") + "></a></li>";
           }).join("") +
+          '<li class="nav-cta"><a href="/contact" data-i18n="nav.cta"></a></li>' +
         "</ul>" +
         '<div class="nav-right">' +
           '<div class="lang-switch" role="group" aria-label="Language">' +
@@ -235,7 +236,20 @@
         }
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-    reveals.forEach(function (el) { io.observe(el); });
+    reveals.forEach(function (el) {
+      // ce qui est déjà à l'écran au chargement apparaît tout de suite
+      if (el.getBoundingClientRect().top < window.innerHeight) {
+        requestAnimationFrame(function () { el.classList.add("in"); });
+      } else {
+        io.observe(el);
+      }
+    });
+    // sécurité : si l'animation ne s'est pas déclenchée, on affiche tout
+    setTimeout(function () {
+      document.querySelectorAll(".reveal:not(.in)").forEach(function (el) {
+        if (el.getBoundingClientRect().top < window.innerHeight * 1.5) el.classList.add("in");
+      });
+    }, 1500);
   } else {
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
@@ -264,6 +278,30 @@
       });
     }, { threshold: 0.6 });
     counters.forEach(function (el) { cio.observe(el); });
+  }
+
+  /* ---------- Offres : carrousel mobile ---------- */
+
+  var offers = document.querySelector(".offers");
+  if (offers && window.matchMedia && matchMedia("(max-width: 760px)").matches) {
+    var cards = offers.querySelectorAll(".offer");
+    var dots = document.createElement("div");
+    dots.className = "offers-dots";
+    dots.setAttribute("aria-hidden", "true");
+    cards.forEach(function () { dots.appendChild(document.createElement("span")); });
+    offers.parentNode.insertBefore(dots, offers.nextSibling);
+    function current() {
+      var mid = offers.scrollLeft + offers.clientWidth / 2, best = 0, dist = Infinity;
+      cards.forEach(function (c, i) {
+        var d = Math.abs(c.offsetLeft + c.offsetWidth / 2 - mid);
+        if (d < dist) { dist = d; best = i; }
+      });
+      dots.querySelectorAll("span").forEach(function (d, i) { d.classList.toggle("on", i === best); });
+    }
+    var featured = offers.querySelector(".offer.featured");
+    if (featured) offers.scrollLeft = featured.offsetLeft - (offers.clientWidth - featured.offsetWidth) / 2;
+    offers.addEventListener("scroll", current, { passive: true });
+    current();
   }
 
   /* ---------- Filtres réalisations ---------- */
