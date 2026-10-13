@@ -51,7 +51,7 @@
       '<span class="wa-icon">' + WA_SVG + "</span></a>";
   }
   var INSTAGRAM = "https://instagram.com/brandini.pro";
-  var LINKEDIN = "https://linkedin.com/company/brandini";
+  var LINKEDIN = "https://www.linkedin.com/company/brandini-agency";
 
   var page = document.body.getAttribute("data-page") || "";
 
