@@ -14,9 +14,9 @@ Site vitrine statique de l'agence Brandini (HTML/CSS/JS + `contact.php`), biling
 ## Où sont les choses
 - Textes FR/EN : `assets/js/i18n.js` (clés `data-i18n` dans les pages). Toujours modifier les deux langues.
 - Header, footer, formulaire, bouton WhatsApp, numéros de l'équipe (`TEAM`), e-mail : haut de `assets/js/main.js`.
-- Couleurs / polices : `:root` dans `assets/css/style.css` (charte du logo : jaune `#fed23e` + bleu marine `#121b2e` ; accent bleu `#2d4b8e` ; pas de violet).
+- Couleurs / polices : `:root` dans `assets/css/style.css`. Logo officiel : marine `#041735` + jaune `#eac14b` (tracés extraits du PDF officiel). Jaune d'accent du site : `#fed23e` (validé par l'utilisateur). Accent bleu `#2d4b8e`, pas de violet. Police des titres : Sora (Arista Pro = police du logo, licence d'essai uniquement → ne pas l'embarquer sans licence commerciale).
 - Traînée néon du curseur : `assets/js/neon.js` (couleurs, durée, épaisseur en haut du fichier ; désactivée sur tactile).
-- Logo vectorisé : `assets/img/logo*.svg` (le même tracé est inline dans `main.js` et `agence.html`).
+- Logo officiel : `assets/img/logo.svg` (couleur), `logo-mark.svg`, `logo-white.svg`, `logo-mono-navy.svg`, `logo-mono-yellow.svg` ; inline dans `main.js` (MARK_SVG / WORD_SVG) et `tools/build_media_hub.py`.
 - Cache : les pages chargent `style.css?v=N`, `i18n.js?v=N`, `main.js?v=N`. À chaque modif de CSS/JS, incrémenter N dans **toutes** les pages `*.html` (`sed -i '' 's/?v=N"/?v=N+1"/g' *.html`) — inclut aussi `neon.js?v=N`.
 
 ## Media Hub (articles)
