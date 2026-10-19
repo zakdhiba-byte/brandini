@@ -508,3 +508,88 @@ html[lang="fr"] .lang-en, html[lang="en"] .lang-fr, html[lang="ar"] .lang-fr, ht
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ==========================================================================
+   Bouton thème + thème clair (fond blanc, texte marine, accents jaunes)
+   ========================================================================== */
+.theme-toggle { position: relative; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--yellow); display: grid; place-items: center; overflow: hidden; flex: none; }
+.theme-toggle:hover { border-color: var(--yellow); }
+.theme-toggle svg { position: absolute; width: 18px; height: 18px; transition: transform .4s var(--ease), opacity .3s; }
+.theme-toggle .ico-moon { opacity: 0; transform: translateY(24px); }
+html[data-theme="light"] .theme-toggle { color: var(--navy); }
+html[data-theme="light"] .theme-toggle .ico-sun { opacity: 0; transform: translateY(-24px); }
+html[data-theme="light"] .theme-toggle .ico-moon { opacity: 1; transform: none; }
+
+html[data-theme="light"] {
+  --text-soft: rgba(18, 28, 48, .72);
+  --text-mute: rgba(18, 28, 48, .52);
+  --line: rgba(18, 28, 48, .13);
+}
+html[data-theme="light"] body { background: #ffffff; color: var(--navy); }
+html[data-theme="light"] .site-header { background: rgba(255, 255, 255, .94); }
+html[data-theme="light"] .nav-links a:hover, html[data-theme="light"] .nav-links a.active { color: var(--navy); }
+html[data-theme="light"] .menu-toggle span { background: var(--navy); }
+html[data-theme="light"] .nav-links { background: #ffffff; }
+html[data-theme="light"] .nav-links a { color: var(--navy); }
+
+/* Logo bicolore en clair : haut jaune, reste marine */
+html[data-theme="light"] .site-header .logo, html[data-theme="light"] .hero-logo { color: var(--navy); }
+html[data-theme="light"] .lg-top { fill: var(--yellow); }
+
+/* Accents jaunes illisibles sur blanc → marine (+ soulignement jaune pour les mots clés) */
+html[data-theme="light"] em, html[data-theme="light"] .hl { color: var(--navy); background: linear-gradient(transparent 62%, rgba(230, 192, 52, .55) 62%, rgba(230, 192, 52, .55) 92%, transparent 92%); }
+html[data-theme="light"] .band-yellow em, html[data-theme="light"] .site-footer em { background: none; }
+html[data-theme="light"] .eyebrow { color: var(--navy); }
+html[data-theme="light"] .band-yellow .eyebrow { color: var(--navy); }
+html[data-theme="light"] .stat strong, html[data-theme="light"] .tl-year, html[data-theme="light"] .card-num,
+html[data-theme="light"] .step .n, html[data-theme="light"] .objective .n, html[data-theme="light"] .format-dur,
+html[data-theme="light"] .crew-role, html[data-theme="light"] .card-link, html[data-theme="light"] .hub-card-link,
+html[data-theme="light"] .contact-info h3, html[data-theme="light"] .article-body a, html[data-theme="light"] .article-sources a,
+html[data-theme="light"] .legal a, html[data-theme="light"] .article-back:hover { color: var(--navy); }
+html[data-theme="light"] .stat strong small { color: var(--navy); }
+html[data-theme="light"] .format.recommended .format-dur { color: rgba(18, 28, 48, .8); }
+
+/* Surfaces */
+html[data-theme="light"] .about { background: rgba(18, 28, 48, .035); }
+html[data-theme="light"] .card, html[data-theme="light"] .ref, html[data-theme="light"] .format:not(.recommended),
+html[data-theme="light"] .step, html[data-theme="light"] .mv-card:not(.yellow), html[data-theme="light"] .founder-card:not(.fc-yellow),
+html[data-theme="light"] .crew-card, html[data-theme="light"] .wa-card, html[data-theme="light"] .form,
+html[data-theme="light"] .sectors li, html[data-theme="light"] .wa-menu {
+  background: #ffffff;
+  color: var(--navy);
+  box-shadow: 0 14px 34px -26px rgba(18, 28, 48, .45);
+}
+html[data-theme="light"] .card.card-yellow { background: var(--yellow); }
+html[data-theme="light"] .crew-card:hover { background: var(--yellow); }
+html[data-theme="light"] .founder-card:not(.fc-yellow) .fc-track { border-top-color: var(--line); }
+html[data-theme="light"] .founder-card:not(.fc-yellow) .fc-track li { border-color: var(--line); }
+html[data-theme="light"] .founder-card:not(.fc-yellow) .fc-label { color: var(--navy); }
+html[data-theme="light"] .fc-li, html[data-theme="light"] .crew-li { background: var(--navy); color: #ffffff; }
+html[data-theme="light"] .field input, html[data-theme="light"] .field select, html[data-theme="light"] .field textarea { background: #ffffff; color: var(--navy); }
+html[data-theme="light"] .field select option, html[data-theme="light"] .field select optgroup { background: #ffffff; color: var(--navy); }
+html[data-theme="light"] .btn-ghost { color: var(--navy); border-color: rgba(18, 28, 48, .3); }
+html[data-theme="light"] .btn-ghost:hover { border-color: var(--navy); color: var(--navy); background: var(--yellow); }
+html[data-theme="light"] .btn-primary:hover { background: var(--navy); border-color: var(--navy); color: #ffffff; }
+html[data-theme="light"] .contact-lines a:hover { color: var(--navy); text-decoration: underline; text-decoration-color: var(--yellow); }
+html[data-theme="light"] .wa-menu .wa-card:hover { background: rgba(18, 28, 48, .04); }
+html[data-theme="light"] .tl-dot { background: #ffffff; }
+html[data-theme="light"] .tl-item.key .tl-dot { background: var(--yellow); }
+html[data-theme="light"] .flag { box-shadow: 0 0 0 1px rgba(18, 28, 48, .2); }
+html[data-theme="light"] .deco-line { opacity: .22; }
+
+/* Media Hub & articles */
+html[data-theme="light"] .article-body { color: rgba(18, 28, 48, .9); }
+html[data-theme="light"] .article-body h2 { color: var(--navy); }
+html[data-theme="light"] .article-tag.ghost { color: var(--navy); }
+html[data-theme="light"] .src-pub { color: var(--navy); }
+html[data-theme="light"] .article-sources li:target { color: var(--navy); }
+html[data-theme="light"] .hub-card:hover .hub-cover { border-color: var(--navy); }
+
+@media (max-width: 640px) {
+  .theme-toggle { width: 36px; height: 36px; }
+  .nav-right { gap: 8px; }
+}
+html[data-theme="light"] .about-grid p.big { color: var(--navy); }
+/* le pied de page reste marine : on lui rend ses couleurs claires */
+html[data-theme="light"] .site-footer { --text-soft: rgba(255, 255, 255, .72); --text-mute: rgba(255, 255, 255, .5); --line: rgba(255, 255, 255, .12); color: #ffffff; }
+html[data-theme="light"] .site-footer .logo { color: var(--yellow); }

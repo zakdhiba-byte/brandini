@@ -82,6 +82,7 @@ def head(title, desc, canonical, page, title_en, desc_en):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="{FONTS}" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css?v={ASSET_V}">
+  <script>try{{if(localStorage.getItem("brandini-theme")==="light")document.documentElement.setAttribute("data-theme","light")}}catch(e){{}}</script>
 </head>
 <body data-page="hub"
       data-title-fr="{esc(title)}" data-title-en="{esc(title_en)}"

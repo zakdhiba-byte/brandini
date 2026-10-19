@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://brandini.pro"
-V = "42"
+V = "44"
 FONTS = ("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700"
          "&family=Quicksand:wght@400;500;600;700&family=Baloo+Bhaijaan+2:wght@500;600;700"
          "&family=Tajawal:wght@400;500;700&display=swap")
@@ -41,6 +41,7 @@ def head(slug, page, t_fr, t_en, t_ar, d_fr, d_en, d_ar, lang="fr"):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="{FONTS}" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css?v={V}">
+  <script>try{{if(localStorage.getItem("brandini-theme")==="light")document.documentElement.setAttribute("data-theme","light")}}catch(e){{}}</script>
 </head>
 <body data-page="{page}"
       data-title-fr="{t_fr}" data-title-en="{t_en}" data-title-ar="{t_ar}"

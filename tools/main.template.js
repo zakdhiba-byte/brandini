@@ -20,7 +20,7 @@
   ];
 
   /* Logo officiel (tracés du PDF), version jaune : currentColor */
-  var MARK_SVG = '<svg class="logo-mark" viewBox="__MV__" fill="currentColor" aria-hidden="true"><path d="__TOP__"/><path d="__LOW__"/></svg>';
+  var MARK_SVG = '<svg class="logo-mark" viewBox="__MV__" fill="currentColor" aria-hidden="true"><path class="lg-top" d="__TOP__"/><path class="lg-body" d="__LOW__"/></svg>';
   var WORD_SVG = '<svg class="logo-word" viewBox="__WV__" fill="currentColor" aria-hidden="true"><path d="__WORD__"/></svg>';
 
   var WA_SVG = __WA__;
@@ -74,6 +74,10 @@ __FLAGS__
           '<li class="nav-cta"><a href="' + href("/contact") + '" data-i18n="nav.cta"></a></li>' +
         "</ul>" +
         '<div class="nav-right">' +
+          '<button type="button" class="theme-toggle" aria-label="Thème clair / sombre" title="Thème clair / sombre">' +
+            '<svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg>' +
+            '<svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>' +
+          '</button>' +
           '<nav class="lang-switch" aria-label="Language">' +
             '<a data-lang="fr" href="' + basePath + '?lang=fr" lang="fr">FR</a>' +
             '<a data-lang="en" href="' + basePath + '?lang=en" lang="en">EN</a>' +
@@ -116,7 +120,7 @@ __FLAGS__
 
   /* Logo complet / décoration statique (la ligne jaune du logo) */
   document.querySelectorAll("[data-logo]").forEach(function (el) {
-    el.innerHTML = '<svg viewBox="__FV__" fill="currentColor" role="img" aria-label="Brandini"><path d="__TOP__"/><path d="__LOW__"/><path d="__WORD__"/></svg>';
+    el.innerHTML = '<svg viewBox="__FV__" fill="currentColor" role="img" aria-label="Brandini"><path class="lg-top" d="__TOP__"/><path class="lg-body" d="__LOW__"/><path class="lg-word" d="__WORD__"/></svg>';
   });
   document.querySelectorAll("[data-deco]").forEach(function (el) {
     el.innerHTML = '<svg viewBox="__MV__" fill="currentColor" aria-hidden="true"><path d="__TOP__"/></svg>';
@@ -215,6 +219,25 @@ __FLAGS__
     if (lang !== "ar") { try { localStorage.setItem("brandini-lang", lang); } catch (e) {} }
   }
   applyLang();
+
+  /* ---------- Thème : marine par défaut, clair au choix ---------- */
+
+  function applyTheme(t) {
+    var light = t === "light";
+    if (light) document.documentElement.setAttribute("data-theme", "light");
+    else document.documentElement.removeAttribute("data-theme");
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", light ? "#ffffff" : "#121c30");
+    var b = document.querySelector(".theme-toggle");
+    if (b) b.setAttribute("aria-pressed", light ? "true" : "false");
+  }
+  applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark");
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".theme-toggle")) return;
+    var next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    applyTheme(next);
+    try { localStorage.setItem("brandini-theme", next); } catch (err) {}
+  });
 
   /* ---------- Menu mobile + en-tête ---------- */
 

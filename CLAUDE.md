@@ -33,3 +33,4 @@ Site vitrine statique de l'agence Brandini (HTML/CSS/JS + `contact.php`), biling
 - Charte : marine `#121C30` (fond), marine doux `#1E2541` (cartes), jaune `#E6C034`, blanc. Texte marine sur jaune. Pas d'effet lumineux, pas d'animation au défilement, pas de compteur animé, pas de bandeau défilant, pas de prix.
 - Polices : Comfortaa + Quicksand (latin), Baloo Bhaijaan 2 + Tajawal (arabe), en attendant les polices définitives de Ghita.
 - Menu : Accueil · Services · Consulting · Réalisations (/work) · L'agence · Media Hub · Contact.
+- Thème : marine par défaut ; bouton soleil/lune pour un thème clair sur fond blanc (`data-theme="light"`, mémorisé dans localStorage `brandini-theme`).
