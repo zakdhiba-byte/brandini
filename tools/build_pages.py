@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://brandini.pro"
-V = "41"
+V = "42"
 FONTS = ("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700"
          "&family=Quicksand:wght@400;500;600;700&family=Baloo+Bhaijaan+2:wght@500;600;700"
          "&family=Tajawal:wght@400;500;700&display=swap")

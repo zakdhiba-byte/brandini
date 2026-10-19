@@ -20,8 +20,8 @@
   ];
 
   /* Logo officiel (tracés du PDF), version jaune : currentColor */
-  var MARK_SVG = '<svg class="logo-mark" viewBox="821 243 283 398" fill="currentColor" aria-hidden="true"><path d="__TOP__"/><path d="__LOW__"/></svg>';
-  var WORD_SVG = '<svg class="logo-word" viewBox="639 713 642 124" fill="currentColor" aria-hidden="true"><path d="__WORD__"/></svg>';
+  var MARK_SVG = '<svg class="logo-mark" viewBox="__MV__" fill="currentColor" aria-hidden="true"><path d="__TOP__"/><path d="__LOW__"/></svg>';
+  var WORD_SVG = '<svg class="logo-word" viewBox="__WV__" fill="currentColor" aria-hidden="true"><path d="__WORD__"/></svg>';
 
   var WA_SVG = __WA__;
   var LI_SVG = __LI__;
@@ -116,10 +116,10 @@ __FLAGS__
 
   /* Logo complet / décoration statique (la ligne jaune du logo) */
   document.querySelectorAll("[data-logo]").forEach(function (el) {
-    el.innerHTML = '<svg viewBox="639 243 642 594" fill="currentColor" role="img" aria-label="Brandini"><path d="__TOP__"/><path d="__LOW__"/><path d="__WORD__"/></svg>';
+    el.innerHTML = '<svg viewBox="__FV__" fill="currentColor" role="img" aria-label="Brandini"><path d="__TOP__"/><path d="__LOW__"/><path d="__WORD__"/></svg>';
   });
   document.querySelectorAll("[data-deco]").forEach(function (el) {
-    el.innerHTML = '<svg viewBox="821 243 283 398" fill="currentColor" aria-hidden="true"><path d="__LOW__"/></svg>';
+    el.innerHTML = '<svg viewBox="__MV__" fill="currentColor" aria-hidden="true"><path d="__TOP__"/></svg>';
   });
 
   /* ---------- WhatsApp ---------- */

@@ -27,7 +27,8 @@ Site vitrine statique de l'agence Brandini (HTML/CSS/JS + `contact.php`), biling
 
 ## Refonte d'octobre 2026 (retours de Ghita)
 - Pages générées par `python3 tools/build_pages.py` (racine FR/EN + copies arabes dans `/ar/`, RTL), puis `python3 tools/build_media_hub.py` (Media Hub + `/ar/media-hub/` + sitemap). Ne pas éditer les .html à la main : modifier `tools/build_pages.py` et relancer. Version des assets : constante `V` dans `build_pages.py`.
-- `assets/js/main.js` est généré depuis `tools/main.template.js` (tracés du logo dans `tools/logo-paths.json`).
+- `assets/js/main.js` est généré par `python3 tools/build_main.py` depuis `tools/main.template.js` + `tools/logo-paths.json` (logo) + `tools/icons.json`.
+- Logo : version du 19/10/2026 (haut du B jaune `#FCD140`, reste marine `#171F35`). Pour un nouveau PDF : `tools/pdf2svg.py` extrait les tracés.
 - Textes FR / EN / AR dans `assets/js/i18n.js`. L'arabe est une première version à faire valider par un rédacteur natif.
 - Charte : marine `#121C30` (fond), marine doux `#1E2541` (cartes), jaune `#E6C034`, blanc. Texte marine sur jaune. Pas d'effet lumineux, pas d'animation au défilement, pas de compteur animé, pas de bandeau défilant, pas de prix.
 - Polices : Comfortaa + Quicksand (latin), Baloo Bhaijaan 2 + Tajawal (arabe), en attendant les polices définitives de Ghita.
