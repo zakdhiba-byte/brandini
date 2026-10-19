@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://brandini.pro/</loc></url>
   <url><loc>https://brandini.pro/services</loc></url>
+  <url><loc>https://brandini.pro/consulting</loc></url>
+  <url><loc>https://brandini.pro/work</loc></url>
   <url><loc>https://brandini.pro/agence</loc></url>
   <url><loc>https://brandini.pro/contact</loc></url>
   <url><loc>https://brandini.pro/media-hub/</loc></url>
@@ -13,4 +15,19 @@
   <url><loc>https://brandini.pro/media-hub/e-commerce-maroc</loc></url>
   <url><loc>https://brandini.pro/media-hub/meta-ads-google-ads</loc></url>
   <url><loc>https://brandini.pro/media-hub/marque-multilingue</loc></url>
+  <url><loc>https://brandini.pro/ar/</loc></url>
+  <url><loc>https://brandini.pro/ar/services</loc></url>
+  <url><loc>https://brandini.pro/ar/consulting</loc></url>
+  <url><loc>https://brandini.pro/ar/work</loc></url>
+  <url><loc>https://brandini.pro/ar/agence</loc></url>
+  <url><loc>https://brandini.pro/ar/contact</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/digital-marketing-moyen-orient</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/marketing-offline-maroc</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/vision-2030-marques</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/reseaux-sociaux-arabie-saoudite</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/immobilier-dubai-marketing</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/e-commerce-maroc</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/meta-ads-google-ads</loc></url>
+  <url><loc>https://brandini.pro/ar/media-hub/marque-multilingue</loc></url>
 </urlset>

@@ -26,7 +26,9 @@ MONTHS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "
 MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August",
              "September", "October", "November", "December"]
 
-FONTS = "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+FONTS = ("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700"
+         "&family=Quicksand:wght@400;500;600;700&family=Baloo+Bhaijaan+2:wght@500;600;700"
+         "&family=Tajawal:wght@400;500;700&display=swap")
 
 MARK = ('<svg class="hub-mark" viewBox="821 243 283 398" fill="currentColor" aria-hidden="true">'
         '<path d="M1088.52 297.75 C1074.56 261.79 1045.54 245.79 1008.07 245.37 C953.39 244.75 898.72 245.08 844.04 245.24 C843.87 245.24 843.69 245.27 843.51 245.27 L823.09 245.44 L823.09 247.96 C823.09 262.27 822.88 275.81 823 289.09 C823 289.18 822.99 289.25 822.99 289.34 L822.99 330.24 C822.99 336.03 827.67 340.71 833.46 340.71 C839.25 340.71 843.93 336.03 843.93 330.24 L843.93 289.34 C843.93 289.21 843.91 289.08 843.9 288.94 C843.84 282.25 843.58 275.14 843.58 267.26 C899.83 267.26 953.38 266.61 1006.91 267.44 C1062.94 268.3 1088.45 313.19 1062.9 362.97 C1062.87 363.03 1062.84 363.09 1062.82 363.15 C1058.55 371.91 1071.01 379.3 1077.31 371.85 C1096.3 349.42 1098.88 324.45 1088.52 297.75"/><path d="M1014.87 415.44 C974.54 407.11 932.13 409.16 888.34 408.58 C888.34 440.61 888.35 466.26 888.35 492.77 C888.35 505.94 888.35 519.62 888.34 533.36 L888.34 533.37 L888.34 538.91 L888.34 549.71 L888.34 549.89 C888.34 555.71 893.06 560.41 898.86 560.41 C904.67 560.41 909.37 555.71 909.37 549.89 L909.37 549.21 L909.37 539.86 L909.37 533.75 L909.37 533.37 L909.37 429.43 C938.75 429.43 966.92 427.06 994.53 429.95 C1041.03 434.82 1074.97 472.24 1077.82 517.38 C1080.65 562.09 1052.82 607.75 1008.49 612.79 C954.25 618.97 898.79 614.26 841.91 614.26 C841.91 548.52 841.66 483 842.01 417.5 C842.23 378.03 862.99 357.48 903.11 356.47 C922.59 355.97 942.14 357.05 961.56 356.22 L997.99 356.22 C1003.57 356.22 1008.08 351.7 1008.08 346.13 C1008.08 340.57 1003.57 336.06 997.99 336.06 L957.59 336.06 C940.64 335.57 923.63 336.05 906.65 336.15 C853.63 336.45 823.4 366.09 823.15 418.62 C822.85 484.26 822.99 549.88 823.09 615.52 C823.1 622.23 823.07 627.8 823.07 635.43 C881.83 635.43 940.5 638.64 997.11 635.17 C1050.66 631.88 1091.67 587.62 1096.48 536.1 C1101.75 479.47 1069.79 426.79 1014.87 415.44"/></svg>')
@@ -74,12 +76,11 @@ def head(title, desc, canonical, page, title_en, desc_en):
   <meta property="og:type" content="{'article' if page == 'article' else 'website'}">
   <link rel="canonical" href="{canonical}">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#f6f4ee">
+  <meta name="theme-color" content="#121c30">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="{FONTS}" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css?v={ASSET_V}">
-  <script>try{{if(localStorage.getItem("brandini-theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}}catch(e){{}}</script>
 </head>
 <body data-page="hub"
       data-title-fr="{esc(title)}" data-title-en="{esc(title_en)}"
@@ -95,7 +96,6 @@ def foot():
 
 <script src="/assets/js/i18n.js?v={ASSET_V}"></script>
 <script src="/assets/js/main.js?v={ASSET_V}"></script>
-<script src="/assets/js/neon.js?v={ASSET_V}"></script>
 </body>
 </html>
 """
@@ -257,12 +257,22 @@ def build_home_block(arts):
 
 
 def build_sitemap(arts):
-    urls = ["/", "/services", "/agence", "/contact", "/media-hub/"] + [f"/media-hub/{a['slug']}" for a in arts]
+    base = ["/", "/services", "/consulting", "/work", "/agence", "/contact", "/media-hub/"] + [f"/media-hub/{a['slug']}" for a in arts]
+    urls = base + ["/ar" + u for u in base]
     body = "\n".join(f"  <url><loc>{SITE}{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "\n</urlset>\n",
         encoding="utf-8")
+
+
+def build_ar():
+    """Copie le Media Hub dans /ar/media-hub/ (interface en arabe, articles en anglais)."""
+    dst = ROOT / "ar" / "media-hub"
+    dst.mkdir(parents=True, exist_ok=True)
+    for f in OUT.glob("*.html"):
+        html = f.read_text(encoding="utf-8").replace('<html lang="fr">', '<html lang="ar" dir="rtl">', 1)
+        (dst / f.name).write_text(html, encoding="utf-8")
 
 
 def main():
@@ -277,6 +287,7 @@ def main():
         build_article(a, arts)
     build_home_block(arts)
     build_sitemap(arts)
+    build_ar()
     print(f"{len(arts)} articles générés (assets v{ASSET_V}).")
 
 
